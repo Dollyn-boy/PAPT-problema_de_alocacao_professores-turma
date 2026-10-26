@@ -1,0 +1,48 @@
+[
+  {
+    "codigo": "EXA806",
+    "nome": "Calculo",
+    "turma": "T01",
+    "professores": [
+      "Ana Lucia"
+    ],
+    "horarios": [
+      {
+        "dia": "SEG",
+        "horario": "17:30 às 19:30",
+        "turno": "Vespertino"
+      },
+      {
+        "dia": "QUA",
+        "horario": "17:30 às 19:30",
+        "turno": "Vespertino"
+      }
+    ],
+    "turnos": [
+      "Vespertino"
+    ]
+  },
+  {
+    "codigo": "TEC217",
+    "nome": "Redes",
+    "turma": "TP01",
+    "professores": [
+      "Elinaldo"
+    ],
+    "horarios": [
+      {
+        "dia": "TER",
+        "horario": "09:30 às 11:30",
+        "turno": "Matutino"
+      },
+      {
+        "dia": "QUI",
+        "horario": "09:30 às 11:30",
+        "turno": "Matutino"
+      }
+    ],
+    "turnos": [
+      "Matutino"
+    ]
+  }
+]

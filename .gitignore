@@ -1,0 +1,6 @@
+__pycache__/
+*.py[cod]
+*.log
+modelo/projeto_ic/model_ic/resultados/*.lp
+modelo/projeto_ic/model_ic/resultados/*_resultado.json
+modelo/projeto_ic/model_ic/resultados/resumo_execucoes.csv

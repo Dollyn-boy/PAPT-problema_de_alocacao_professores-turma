@@ -1,0 +1,1968 @@
+[
+    {
+        "codigo": "CHF215",
+        "nome": "INTRODUÇÃO À SOCIOLOGIA",
+        "turma": "T01",
+        "professores": [
+            "ROBERTA BRANDÃO NOVAES"
+        ],
+        "horarios": [
+            {
+                "dia": "SEX",
+                "horario": "15:30 às 18:30",
+                "turno": "Vespertino"
+            }
+        ],
+        "turnos": [
+            "Vespertino"
+        ]
+    },
+    {
+        "codigo": "CHF987",
+        "nome": "PSICOLOGIA DAS RELAÇÕES HUMANAS-E",
+        "turma": "T01",
+        "professores": [
+            "LOUISE CRISTINE SANTOS"
+        ],
+        "horarios": [
+            {
+                "dia": "SEG",
+                "horario": "09:30 às 12:30",
+                "turno": "Matutino"
+            }
+        ],
+        "turnos": [
+            "Matutino"
+        ]
+    },
+    {
+        "codigo": "CIS116",
+        "nome": "EXERC. PROF. DO ENGENHEIRO",
+        "turma": "T01",
+        "professores": [
+            "ARIADNE MURICY BARRETO"
+        ],
+        "horarios": [
+            {
+                "dia": "SEX",
+                "horario": "15:30 às 18:30",
+                "turno": "Vespertino"
+            }
+        ],
+        "turnos": [
+            "Vespertino"
+        ]
+    },
+    {
+        "codigo": "CIS245",
+        "nome": "ECONOMIA APLIC. À ENGENHARIA",
+        "turma": "T01",
+        "professores": [
+            "ANTONIO ROSEVALDO"
+        ],
+        "horarios": [
+            {
+                "dia": "SEG",
+                "horario": "10:30 às 12:30",
+                "turno": "Matutino"
+            },
+            {
+                "dia": "SEX",
+                "horario": "16:30 às 18:30",
+                "turno": "Vespertino"
+            }
+        ],
+        "turnos": [
+            "Vespertino",
+            "Matutino"
+        ]
+    },
+    {
+        "codigo": "CIS323",
+        "nome": "ADM. APLICADA À ENGENHARIA",
+        "turma": "T01",
+        "professores": [
+            "DAISY LIMA DE SOUZA"
+        ],
+        "horarios": [
+            {
+                "dia": "QUA",
+                "horario": "16:30 às 18:30",
+                "turno": "Vespertino"
+            },
+            {
+                "dia": "SEX",
+                "horario": "16:30 às 18:30",
+                "turno": "Vespertino"
+            }
+        ],
+        "turnos": [
+            "Vespertino"
+        ]
+    },
+    {
+        "codigo": "CIS323",
+        "nome": "ADM. APLICADA À ENGENHARIA",
+        "turma": "T02",
+        "professores": [
+            "MARILÚ PEREIRA CASTRO"
+        ],
+        "horarios": [
+            {
+                "dia": "TER",
+                "horario": "19:00 às 23:00",
+                "turno": "Noturno"
+            }
+        ],
+        "turnos": [
+            "Noturno"
+        ]
+    },
+    {
+        "codigo": "CIS717",
+        "nome": "DIREITO URBANÍSTICO",
+        "turma": "T01",
+        "professores": [
+            "ADRIANA NOGUEIRA VIEIRA"
+        ],
+        "horarios": [
+            {
+                "dia": "QUI",
+                "horario": "19:00 às 23:00",
+                "turno": "Noturno"
+            }
+        ],
+        "turnos": [
+            "Noturno"
+        ]
+    },
+    {
+        "codigo": "EXA170",
+        "nome": "INT. A CIENC. DA COMPUTAÇÃO",
+        "turma": "T02P0201",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "EXA170",
+        "nome": "INT. A CIENC. DA COMPUTAÇÃO",
+        "turma": "P0201",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "EXA170",
+        "nome": "INT. A CIENC. DA COMPUTAÇÃO",
+        "turma": "T02",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "EXA170",
+        "nome": "INT. A CIENC. DA COMPUTAÇÃO",
+        "turma": "T02P0202",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "EXA170",
+        "nome": "INT. A CIENC. DA COMPUTAÇÃO",
+        "turma": "P0202",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "EXA170",
+        "nome": "INT. A CIENC. DA COMPUTAÇÃO",
+        "turma": "T02",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "EXA170",
+        "nome": "INT. A CIENC. DA COMPUTAÇÃO",
+        "turma": "T03P0301",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "EXA170",
+        "nome": "INT. A CIENC. DA COMPUTAÇÃO",
+        "turma": "P0301",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "EXA170",
+        "nome": "INT. A CIENC. DA COMPUTAÇÃO",
+        "turma": "T03",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "EXA416",
+        "nome": "QUÍMICA APLICADA",
+        "turma": "T01P0101",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "EXA416",
+        "nome": "QUÍMICA APLICADA",
+        "turma": "P0101",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "EXA416",
+        "nome": "QUÍMICA APLICADA",
+        "turma": "T01",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "EXA416",
+        "nome": "QUÍMICA APLICADA",
+        "turma": "T01P0102",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "EXA416",
+        "nome": "QUÍMICA APLICADA",
+        "turma": "P0102",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "EXA416",
+        "nome": "QUÍMICA APLICADA",
+        "turma": "T01",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "EXA416",
+        "nome": "QUÍMICA APLICADA",
+        "turma": "T01P0103",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "EXA416",
+        "nome": "QUÍMICA APLICADA",
+        "turma": "P0103",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "EXA416",
+        "nome": "QUÍMICA APLICADA",
+        "turma": "T01",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "EXA416",
+        "nome": "QUÍMICA APLICADA",
+        "turma": "T01P0104",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "EXA416",
+        "nome": "QUÍMICA APLICADA",
+        "turma": "P0104",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "EXA416",
+        "nome": "QUÍMICA APLICADA",
+        "turma": "T01",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "EXA516",
+        "nome": "GEOLOGIA BÁSICA",
+        "turma": "T01P0101",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "EXA516",
+        "nome": "GEOLOGIA BÁSICA",
+        "turma": "P0101",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "EXA516",
+        "nome": "GEOLOGIA BÁSICA",
+        "turma": "T01",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "EXA516",
+        "nome": "GEOLOGIA BÁSICA",
+        "turma": "T01P0102",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "EXA516",
+        "nome": "GEOLOGIA BÁSICA",
+        "turma": "P0102",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "EXA516",
+        "nome": "GEOLOGIA BÁSICA",
+        "turma": "T01",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "EXA702",
+        "nome": "ÁLGEBRA VETORIAL E GEOMETRIA ANALÍTICA",
+        "turma": "T01",
+        "professores": [],
+        "horarios": [
+            {
+                "dia": "QUA",
+                "horario": "09:30 às 11:30",
+                "turno": "Matutino"
+            },
+            {
+                "dia": "SEX",
+                "horario": "15:30 às 17:30",
+                "turno": "Vespertino"
+            }
+        ],
+        "turnos": [
+            "Vespertino",
+            "Matutino"
+        ]
+    },
+    {
+        "codigo": "EXA702",
+        "nome": "ÁLGEBRA VETORIAL E GEOMETRIA ANALÍTICA",
+        "turma": "T04",
+        "professores": [
+            "JUCINEIDE SILVA SANTOS"
+        ],
+        "horarios": [
+            {
+                "dia": "QUA",
+                "horario": "13:30 às 15:30",
+                "turno": "Vespertino"
+            },
+            {
+                "dia": "SEX",
+                "horario": "13:30 às 15:30",
+                "turno": "Vespertino"
+            }
+        ],
+        "turnos": [
+            "Vespertino"
+        ]
+    },
+    {
+        "codigo": "EXA703",
+        "nome": "ÁLGEBRA LINEAR I E",
+        "turma": "T02",
+        "professores": [],
+        "horarios": [
+            {
+                "dia": "TER",
+                "horario": "15:30 às 17:30",
+                "turno": "Vespertino"
+            },
+            {
+                "dia": "QUI",
+                "horario": "10:30 às 12:30",
+                "turno": "Matutino"
+            }
+        ],
+        "turnos": [
+            "Vespertino",
+            "Matutino"
+        ]
+    },
+    {
+        "codigo": "EXA704",
+        "nome": "CÁLCULO DIFERENCIAL E INTEGRAL I E",
+        "turma": "T01",
+        "professores": [
+            "JOILMA SILVA CARNEIRO"
+        ],
+        "horarios": [
+            {
+                "dia": "SEG",
+                "horario": "16:30 às 18:30",
+                "turno": "Vespertino"
+            },
+            {
+                "dia": "QUI",
+                "horario": "16:30 às 18:30",
+                "turno": "Vespertino"
+            }
+        ],
+        "turnos": [
+            "Vespertino"
+        ]
+    },
+    {
+        "codigo": "EXA704",
+        "nome": "CÁLCULO DIFERENCIAL E INTEGRAL I E",
+        "turma": "T05",
+        "professores": [
+            "ROGÉRIO GOMES MATIAS"
+        ],
+        "horarios": [
+            {
+                "dia": "QUA",
+                "horario": "07:30 às 09:30",
+                "turno": "Matutino"
+            },
+            {
+                "dia": "SEX",
+                "horario": "07:30 às 09:30",
+                "turno": "Matutino"
+            }
+        ],
+        "turnos": [
+            "Matutino"
+        ]
+    },
+    {
+        "codigo": "EXA705",
+        "nome": "CÁLCULO DIFERENCIAL E INTEGRAL II E",
+        "turma": "T02",
+        "professores": [
+            "JACQUELINE COSTA CINTRA"
+        ],
+        "horarios": [
+            {
+                "dia": "SEG",
+                "horario": "15:30 às 17:30",
+                "turno": "Vespertino"
+            },
+            {
+                "dia": "QUA",
+                "horario": "07:30 às 09:30",
+                "turno": "Matutino"
+            }
+        ],
+        "turnos": [
+            "Vespertino",
+            "Matutino"
+        ]
+    },
+    {
+        "codigo": "EXA706",
+        "nome": "EQUAÇÕES DIFERENCIAIS I-E",
+        "turma": "T02",
+        "professores": [
+            "MOACYR RODRIGUES DE"
+        ],
+        "horarios": [
+            {
+                "dia": "QUA",
+                "horario": "13:30 às 15:30",
+                "turno": "Vespertino"
+            },
+            {
+                "dia": "SEX",
+                "horario": "09:30 às 11:30",
+                "turno": "Matutino"
+            }
+        ],
+        "turnos": [
+            "Vespertino",
+            "Matutino"
+        ]
+    },
+    {
+        "codigo": "EXA707",
+        "nome": "CÁLCULO DE FUNÇÕES DE VÁRIAS VARIÁVEIS",
+        "turma": "T01",
+        "professores": [
+            "ADEMAKSON SOUZA ARAÚJO"
+        ],
+        "horarios": [
+            {
+                "dia": "QUA",
+                "horario": "07:30 às 09:30",
+                "turno": "Matutino"
+            },
+            {
+                "dia": "SEX",
+                "horario": "07:30 às 09:30",
+                "turno": "Matutino"
+            }
+        ],
+        "turnos": [
+            "Matutino"
+        ]
+    },
+    {
+        "codigo": "EXA709",
+        "nome": "PROBABILIDADE E ESTATÍSTICA I E",
+        "turma": "T01",
+        "professores": [
+            "ALOISIO MACHADO DA SILVA"
+        ],
+        "horarios": [
+            {
+                "dia": "SEG",
+                "horario": "10:30 às 12:30",
+                "turno": "Matutino"
+            },
+            {
+                "dia": "QUA",
+                "horario": "10:30 às 12:30",
+                "turno": "Matutino"
+            }
+        ],
+        "turnos": [
+            "Matutino"
+        ]
+    },
+    {
+        "codigo": "EXA709",
+        "nome": "PROBABILIDADE E ESTATÍSTICA I E",
+        "turma": "T04",
+        "professores": [
+            "REINALDA SOUZA OLIVEIRA"
+        ],
+        "horarios": [
+            {
+                "dia": "TER",
+                "horario": "13:30 às 15:30",
+                "turno": "Vespertino"
+            },
+            {
+                "dia": "QUI",
+                "horario": "13:30 às 15:30",
+                "turno": "Vespertino"
+            }
+        ],
+        "turnos": [
+            "Vespertino"
+        ]
+    },
+    {
+        "codigo": "FIS110",
+        "nome": "FÍSICA I",
+        "turma": "T01P0101",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "FIS110",
+        "nome": "FÍSICA I",
+        "turma": "P0101",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "FIS110",
+        "nome": "FÍSICA I",
+        "turma": "T01",
+        "professores": [],
+        "horarios": [
+            {
+                "dia": "QUI",
+                "horario": "07:30 às 09:30",
+                "turno": "Matutino"
+            }
+        ],
+        "turnos": [
+            "Matutino"
+        ]
+    },
+    {
+        "codigo": "FIS110",
+        "nome": "FÍSICA I",
+        "turma": "T01P0102",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "FIS110",
+        "nome": "FÍSICA I",
+        "turma": "P0102",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "FIS110",
+        "nome": "FÍSICA I",
+        "turma": "T01",
+        "professores": [],
+        "horarios": [
+            {
+                "dia": "QUI",
+                "horario": "07:30 às 09:30",
+                "turno": "Matutino"
+            }
+        ],
+        "turnos": [
+            "Matutino"
+        ]
+    },
+    {
+        "codigo": "FIS110",
+        "nome": "FÍSICA I",
+        "turma": "T01P0103",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "FIS110",
+        "nome": "FÍSICA I",
+        "turma": "P0103",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "FIS110",
+        "nome": "FÍSICA I",
+        "turma": "T01",
+        "professores": [],
+        "horarios": [
+            {
+                "dia": "QUI",
+                "horario": "07:30 às 09:30",
+                "turno": "Matutino"
+            }
+        ],
+        "turnos": [
+            "Matutino"
+        ]
+    },
+    {
+        "codigo": "FIS210",
+        "nome": "FÍSICA II",
+        "turma": "T01P0101",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "FIS210",
+        "nome": "FÍSICA II",
+        "turma": "P0101",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "FIS210",
+        "nome": "FÍSICA II",
+        "turma": "T01",
+        "professores": [],
+        "horarios": [
+            {
+                "dia": "SEX",
+                "horario": "16:30 às 18:30",
+                "turno": "Vespertino"
+            }
+        ],
+        "turnos": [
+            "Vespertino"
+        ]
+    },
+    {
+        "codigo": "FIS210",
+        "nome": "FÍSICA II",
+        "turma": "T01P0102",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "FIS210",
+        "nome": "FÍSICA II",
+        "turma": "P0102",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "FIS210",
+        "nome": "FÍSICA II",
+        "turma": "T01",
+        "professores": [],
+        "horarios": [
+            {
+                "dia": "SEX",
+                "horario": "16:30 às 18:30",
+                "turno": "Vespertino"
+            }
+        ],
+        "turnos": [
+            "Vespertino"
+        ]
+    },
+    {
+        "codigo": "FIS310",
+        "nome": "FÍSICA III",
+        "turma": "T01P0101",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "FIS310",
+        "nome": "FÍSICA III",
+        "turma": "P0101",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "FIS310",
+        "nome": "FÍSICA III",
+        "turma": "T01",
+        "professores": [],
+        "horarios": [
+            {
+                "dia": "SEX",
+                "horario": "15:30 às 17:30",
+                "turno": "Vespertino"
+            }
+        ],
+        "turnos": [
+            "Vespertino"
+        ]
+    },
+    {
+        "codigo": "FIS310",
+        "nome": "FÍSICA III",
+        "turma": "T01P0102",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "FIS310",
+        "nome": "FÍSICA III",
+        "turma": "P0102",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "FIS310",
+        "nome": "FÍSICA III",
+        "turma": "T01",
+        "professores": [],
+        "horarios": [
+            {
+                "dia": "SEX",
+                "horario": "15:30 às 17:30",
+                "turno": "Vespertino"
+            }
+        ],
+        "turnos": [
+            "Vespertino"
+        ]
+    },
+    {
+        "codigo": "LET610",
+        "nome": "DESENHO BÁSICO",
+        "turma": "TP01",
+        "professores": [
+            "ROBSON LUIZ SANTANA"
+        ],
+        "horarios": [
+            {
+                "dia": "TER",
+                "horario": "07:30 às 10:30",
+                "turno": "Matutino"
+            }
+        ],
+        "turnos": [
+            "Matutino"
+        ]
+    },
+    {
+        "codigo": "LET610",
+        "nome": "DESENHO BÁSICO",
+        "turma": "TP02",
+        "professores": [
+            "ROBSON LUIZ SANTANA"
+        ],
+        "horarios": [
+            {
+                "dia": "QUI",
+                "horario": "13:30 às 16:30",
+                "turno": "Vespertino"
+            }
+        ],
+        "turnos": [
+            "Vespertino"
+        ]
+    },
+    {
+        "codigo": "LET615",
+        "nome": "GEOMETRIA DESCRITIVA-E",
+        "turma": "TP01",
+        "professores": [
+            "IVONEIDE DE FRANÇA COSTA"
+        ],
+        "horarios": [
+            {
+                "dia": "TER",
+                "horario": "13:30 às 17:30",
+                "turno": "Vespertino"
+            }
+        ],
+        "turnos": [
+            "Vespertino"
+        ]
+    },
+    {
+        "codigo": "LET615",
+        "nome": "GEOMETRIA DESCRITIVA-E",
+        "turma": "TP02",
+        "professores": [
+            "HEMECLECIO NASCIMENTO"
+        ],
+        "horarios": [
+            {
+                "dia": "QUI",
+                "horario": "13:30 às 17:30",
+                "turno": "Vespertino"
+            }
+        ],
+        "turnos": [
+            "Vespertino"
+        ]
+    },
+    {
+        "codigo": "LET616",
+        "nome": "DESENHO ARQUITETÔNICO I",
+        "turma": "TP01",
+        "professores": [
+            "NILO MÁRCIO DE ANDRADE"
+        ],
+        "horarios": [
+            {
+                "dia": "SEG",
+                "horario": "13:30 às 16:30",
+                "turno": "Vespertino"
+            },
+            {
+                "dia": "TER",
+                "horario": "13:30 às 15:30",
+                "turno": "Vespertino"
+            }
+        ],
+        "turnos": [
+            "Vespertino"
+        ]
+    },
+    {
+        "codigo": "LET616",
+        "nome": "DESENHO ARQUITETÔNICO I",
+        "turma": "TP02",
+        "professores": [
+            "NILO MÁRCIO DE ANDRADE"
+        ],
+        "horarios": [
+            {
+                "dia": "SEG",
+                "horario": "16:30 às 18:30",
+                "turno": "Vespertino"
+            },
+            {
+                "dia": "TER",
+                "horario": "15:30 às 18:30",
+                "turno": "Vespertino"
+            }
+        ],
+        "turnos": [
+            "Vespertino"
+        ]
+    },
+    {
+        "codigo": "LET617",
+        "nome": "DESENHO TÉCNICO",
+        "turma": "TP01",
+        "professores": [
+            "LILIAN QUELLE SANTOS DE"
+        ],
+        "horarios": [
+            {
+                "dia": "SEG",
+                "horario": "16:30 às 18:30",
+                "turno": "Vespertino"
+            },
+            {
+                "dia": "SEG",
+                "horario": "07:30 às 09:30",
+                "turno": "Matutino"
+            }
+        ],
+        "turnos": [
+            "Vespertino",
+            "Matutino"
+        ]
+    },
+    {
+        "codigo": "LET617",
+        "nome": "DESENHO TÉCNICO",
+        "turma": "TP02",
+        "professores": [
+            "LILIAN QUELLE SANTOS DE"
+        ],
+        "horarios": [
+            {
+                "dia": "QUA",
+                "horario": "07:30 às 11:30",
+                "turno": "Matutino"
+            }
+        ],
+        "turnos": [
+            "Matutino"
+        ]
+    },
+    {
+        "codigo": "LET808",
+        "nome": "LIBRAS: NOÇÕES BÁSICAS",
+        "turma": "T08",
+        "professores": [
+            "DANIELA BETÂNIA DOS"
+        ],
+        "horarios": [
+            {
+                "dia": "TER",
+                "horario": "19:00 às 22:00",
+                "turno": "Noturno"
+            }
+        ],
+        "turnos": [
+            "Noturno"
+        ]
+    },
+    {
+        "codigo": "TEC146",
+        "nome": "INTRODUÇÃO À ENGENHARIA",
+        "turma": "TP01",
+        "professores": [
+            "KOJI DE JESUS NAGAHAMA"
+        ],
+        "horarios": [
+            {
+                "dia": "QUA",
+                "horario": "15:30 às 18:30",
+                "turno": "Vespertino"
+            }
+        ],
+        "turnos": [
+            "Vespertino"
+        ]
+    },
+    {
+        "codigo": "TEC147",
+        "nome": "TOPOGRAFIA",
+        "turma": "T01P0101",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "TEC147",
+        "nome": "TOPOGRAFIA",
+        "turma": "P0101",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "TEC147",
+        "nome": "TOPOGRAFIA",
+        "turma": "T01",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "TEC147",
+        "nome": "TOPOGRAFIA",
+        "turma": "T01P0102",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "TEC147",
+        "nome": "TOPOGRAFIA",
+        "turma": "P0102",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "TEC147",
+        "nome": "TOPOGRAFIA",
+        "turma": "T01",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "TEC148",
+        "nome": "MECÂNICA",
+        "turma": "TP01",
+        "professores": [
+            "TER"
+        ],
+        "horarios": [
+            {
+                "dia": "TER",
+                "horario": "13:30 às 15:30",
+                "turno": "Vespertino"
+            },
+            {
+                "dia": "QUI",
+                "horario": "13:30 às 16:30",
+                "turno": "Vespertino"
+            }
+        ],
+        "turnos": [
+            "Vespertino"
+        ]
+    },
+    {
+        "codigo": "TEC149",
+        "nome": "RESISTÊNCIA DOS MATERIAIS I-E",
+        "turma": "TP01",
+        "professores": [
+            "JOSÉ MÁRIO FEITOSA LIMA"
+        ],
+        "horarios": [
+            {
+                "dia": "SEG",
+                "horario": "13:30 às 16:30",
+                "turno": "Vespertino"
+            },
+            {
+                "dia": "SEX",
+                "horario": "13:30 às 15:30",
+                "turno": "Vespertino"
+            }
+        ],
+        "turnos": [
+            "Vespertino"
+        ]
+    },
+    {
+        "codigo": "TEC150",
+        "nome": "RESISTÊNCIA DOS MATERIAIS II-E",
+        "turma": "TP01",
+        "professores": [
+            "ANDERSON DE SOUZA MATOS"
+        ],
+        "horarios": [
+            {
+                "dia": "QUA",
+                "horario": "13:30 às 15:30",
+                "turno": "Vespertino"
+            },
+            {
+                "dia": "SEX",
+                "horario": "13:30 às 15:30",
+                "turno": "Vespertino"
+            }
+        ],
+        "turnos": [
+            "Vespertino"
+        ]
+    },
+    {
+        "codigo": "TEC151",
+        "nome": "ANÁLISE ESTRUTURAL I",
+        "turma": "TP01",
+        "professores": [
+            "ANTONIO RIBEIRO SANTOS"
+        ],
+        "horarios": [
+            {
+                "dia": "TER",
+                "horario": "13:30 às 15:30",
+                "turno": "Vespertino"
+            },
+            {
+                "dia": "QUI",
+                "horario": "13:30 às 15:30",
+                "turno": "Vespertino"
+            }
+        ],
+        "turnos": [
+            "Vespertino"
+        ]
+    },
+    {
+        "codigo": "TEC152",
+        "nome": "ANÁLISE ESTRUTURAL II",
+        "turma": "TP01",
+        "professores": [],
+        "horarios": [
+            {
+                "dia": "QUA",
+                "horario": "15:30 às 17:30",
+                "turno": "Vespertino"
+            },
+            {
+                "dia": "SEX",
+                "horario": "16:30 às 18:30",
+                "turno": "Vespertino"
+            }
+        ],
+        "turnos": [
+            "Vespertino"
+        ]
+    },
+    {
+        "codigo": "TEC153",
+        "nome": "ESTRUTURAS METÁLICAS I",
+        "turma": "TP01",
+        "professores": [
+            "TAINÁ MASCARENHAS BORGHI"
+        ],
+        "horarios": [
+            {
+                "dia": "TER",
+                "horario": "16:30 às 18:30",
+                "turno": "Vespertino"
+            },
+            {
+                "dia": "QUI",
+                "horario": "15:30 às 18:30",
+                "turno": "Vespertino"
+            }
+        ],
+        "turnos": [
+            "Vespertino"
+        ]
+    },
+    {
+        "codigo": "TEC154",
+        "nome": "ESTRUTURA DE MADEIRA",
+        "turma": "TP01",
+        "professores": [
+            "TAINÁ MASCARENHAS BORGHI"
+        ],
+        "horarios": [
+            {
+                "dia": "TER",
+                "horario": "13:30 às 15:30",
+                "turno": "Vespertino"
+            },
+            {
+                "dia": "QUI",
+                "horario": "13:30 às 15:30",
+                "turno": "Vespertino"
+            }
+        ],
+        "turnos": [
+            "Vespertino"
+        ]
+    },
+    {
+        "codigo": "TEC155",
+        "nome": "ESTRUTURAS DE CONCRETO I",
+        "turma": "TP01",
+        "professores": [
+            "MÉRCURIE JANEAI MATEUS"
+        ],
+        "horarios": [
+            {
+                "dia": "SEG",
+                "horario": "13:30 às 16:30",
+                "turno": "Vespertino"
+            },
+            {
+                "dia": "SEX",
+                "horario": "13:30 às 15:30",
+                "turno": "Vespertino"
+            }
+        ],
+        "turnos": [
+            "Vespertino"
+        ]
+    },
+    {
+        "codigo": "TEC156",
+        "nome": "MATERIAIS DE CONSTRUÇÃO I-E",
+        "turma": "TP01",
+        "professores": [
+            "CINTIA MARIA ARIANI FONTES"
+        ],
+        "horarios": [
+            {
+                "dia": "QUA",
+                "horario": "09:30 às 12:30",
+                "turno": "Matutino"
+            },
+            {
+                "dia": "SEX",
+                "horario": "10:30 às 12:30",
+                "turno": "Matutino"
+            }
+        ],
+        "turnos": [
+            "Matutino"
+        ]
+    },
+    {
+        "codigo": "TEC157",
+        "nome": "MATERIAIS DE CONSTRUÇÃO II-E",
+        "turma": "T01P0101",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "TEC157",
+        "nome": "MATERIAIS DE CONSTRUÇÃO II-E",
+        "turma": "P0101",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "TEC157",
+        "nome": "MATERIAIS DE CONSTRUÇÃO II-E",
+        "turma": "T01",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "TEC157",
+        "nome": "MATERIAIS DE CONSTRUÇÃO II-E",
+        "turma": "T01P0102",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "TEC157",
+        "nome": "MATERIAIS DE CONSTRUÇÃO II-E",
+        "turma": "P0102",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "TEC157",
+        "nome": "MATERIAIS DE CONSTRUÇÃO II-E",
+        "turma": "T01",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "TEC157",
+        "nome": "MATERIAIS DE CONSTRUÇÃO II-E",
+        "turma": "T01P0103",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "TEC157",
+        "nome": "MATERIAIS DE CONSTRUÇÃO II-E",
+        "turma": "P0103",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "TEC157",
+        "nome": "MATERIAIS DE CONSTRUÇÃO II-E",
+        "turma": "T01",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "TEC158",
+        "nome": "INST. ELÉTRICAS PREDIAIS",
+        "turma": "TP01",
+        "professores": [
+            "SUÂNIA FABIELE MOITINHO"
+        ],
+        "horarios": [
+            {
+                "dia": "TER",
+                "horario": "16:30 às 18:30",
+                "turno": "Vespertino"
+            },
+            {
+                "dia": "QUI",
+                "horario": "07:30 às 10:30",
+                "turno": "Matutino"
+            }
+        ],
+        "turnos": [
+            "Vespertino",
+            "Matutino"
+        ]
+    },
+    {
+        "codigo": "TEC159",
+        "nome": "TECNOLOGIAS DAS CONTRUÇÕES I",
+        "turma": "TP01",
+        "professores": [
+            "SUÂNIA FABIELE MOITINHO"
+        ],
+        "horarios": [
+            {
+                "dia": "SEG",
+                "horario": "15:30 às 18:30",
+                "turno": "Vespertino"
+            },
+            {
+                "dia": "QUI",
+                "horario": "13:30 às 15:30",
+                "turno": "Vespertino"
+            }
+        ],
+        "turnos": [
+            "Vespertino"
+        ]
+    },
+    {
+        "codigo": "TEC160",
+        "nome": "TECNOLOGIA DAS CONSTRUÇÕES II",
+        "turma": "TP01",
+        "professores": [
+            "SEG"
+        ],
+        "horarios": [
+            {
+                "dia": "SEG",
+                "horario": "16:30 às 18:30",
+                "turno": "Vespertino"
+            },
+            {
+                "dia": "QUA",
+                "horario": "16:30 às 18:30",
+                "turno": "Vespertino"
+            }
+        ],
+        "turnos": [
+            "Vespertino"
+        ]
+    },
+    {
+        "codigo": "TEC161",
+        "nome": "MECÂNICA DOS FLUIDOS",
+        "turma": "TP01",
+        "professores": [
+            "RISEUDA PEREIRA DE SOUSA"
+        ],
+        "horarios": [
+            {
+                "dia": "TER",
+                "horario": "13:30 às 16:30",
+                "turno": "Vespertino"
+            },
+            {
+                "dia": "QUI",
+                "horario": "13:30 às 16:30",
+                "turno": "Vespertino"
+            }
+        ],
+        "turnos": [
+            "Vespertino"
+        ]
+    },
+    {
+        "codigo": "TEC161",
+        "nome": "MECÂNICA DOS FLUIDOS",
+        "turma": "TP02",
+        "professores": [
+            "RISEUDA PEREIRA DE SOUSA"
+        ],
+        "horarios": [
+            {
+                "dia": "TER",
+                "horario": "09:30 às 12:30",
+                "turno": "Matutino"
+            },
+            {
+                "dia": "QUI",
+                "horario": "09:30 às 12:30",
+                "turno": "Matutino"
+            }
+        ],
+        "turnos": [
+            "Matutino"
+        ]
+    },
+    {
+        "codigo": "TEC162",
+        "nome": "HIDRÁULICA",
+        "turma": "TP01",
+        "professores": [
+            "DIÓGENES OLIVEIRA SENNA"
+        ],
+        "horarios": [
+            {
+                "dia": "SEG",
+                "horario": "16:30 às 18:30",
+                "turno": "Vespertino"
+            },
+            {
+                "dia": "QUA",
+                "horario": "15:30 às 18:30",
+                "turno": "Vespertino"
+            }
+        ],
+        "turnos": [
+            "Vespertino"
+        ]
+    },
+    {
+        "codigo": "TEC163",
+        "nome": "HIDROLOGIA APLICADA",
+        "turma": "TP01",
+        "professores": [
+            "TIAGO LIBERALESSO"
+        ],
+        "horarios": [
+            {
+                "dia": "QUA",
+                "horario": "13:30 às 15:30",
+                "turno": "Vespertino"
+            },
+            {
+                "dia": "SEX",
+                "horario": "13:30 às 16:30",
+                "turno": "Vespertino"
+            }
+        ],
+        "turnos": [
+            "Vespertino"
+        ]
+    },
+    {
+        "codigo": "TEC164",
+        "nome": "SANEAMENTO I",
+        "turma": "TP01",
+        "professores": [],
+        "horarios": [
+            {
+                "dia": "TER",
+                "horario": "15:30 às 17:30",
+                "turno": "Vespertino"
+            },
+            {
+                "dia": "QUI",
+                "horario": "15:30 às 17:30",
+                "turno": "Vespertino"
+            }
+        ],
+        "turnos": [
+            "Vespertino"
+        ]
+    },
+    {
+        "codigo": "TEC165",
+        "nome": "SANEAMENTO II",
+        "turma": "TP01",
+        "professores": [
+            "TIAGO ASSUNÇÃO SANTOS"
+        ],
+        "horarios": [
+            {
+                "dia": "QUA",
+                "horario": "13:30 às 15:30",
+                "turno": "Vespertino"
+            },
+            {
+                "dia": "SEX",
+                "horario": "15:30 às 17:30",
+                "turno": "Vespertino"
+            }
+        ],
+        "turnos": [
+            "Vespertino"
+        ]
+    },
+    {
+        "codigo": "TEC166",
+        "nome": "INST. HID. E SANIT. PREDIAIS",
+        "turma": "TP01",
+        "professores": [
+            "DIÓGENES OLIVEIRA SENNA"
+        ],
+        "horarios": [
+            {
+                "dia": "SEG",
+                "horario": "13:30 às 15:30",
+                "turno": "Vespertino"
+            },
+            {
+                "dia": "TER",
+                "horario": "13:30 às 15:30",
+                "turno": "Vespertino"
+            }
+        ],
+        "turnos": [
+            "Vespertino"
+        ]
+    },
+    {
+        "codigo": "TEC167",
+        "nome": "CIÊNCIAS DO AMBIENTE",
+        "turma": "TP01",
+        "professores": [
+            "ZANNA MARIA RODRIGUES DE"
+        ],
+        "horarios": [
+            {
+                "dia": "QUA",
+                "horario": "09:30 às 12:30",
+                "turno": "Matutino"
+            }
+        ],
+        "turnos": [
+            "Matutino"
+        ]
+    },
+    {
+        "codigo": "TEC168",
+        "nome": "ESTRADAS I-E",
+        "turma": "TP01",
+        "professores": [
+            "IGOR VIEIRA SANTOS"
+        ],
+        "horarios": [
+            {
+                "dia": "TER",
+                "horario": "13:30 às 16:30",
+                "turno": "Vespertino"
+            },
+            {
+                "dia": "QUI",
+                "horario": "13:30 às 15:30",
+                "turno": "Vespertino"
+            }
+        ],
+        "turnos": [
+            "Vespertino"
+        ]
+    },
+    {
+        "codigo": "TEC168",
+        "nome": "ESTRADAS I-E",
+        "turma": "TP02",
+        "professores": [
+            "IGOR VIEIRA SANTOS"
+        ],
+        "horarios": [
+            {
+                "dia": "TER",
+                "horario": "09:30 às 12:30",
+                "turno": "Matutino"
+            },
+            {
+                "dia": "QUI",
+                "horario": "10:30 às 12:30",
+                "turno": "Matutino"
+            }
+        ],
+        "turnos": [
+            "Matutino"
+        ]
+    },
+    {
+        "codigo": "TEC169",
+        "nome": "ESTRADAS II-E",
+        "turma": "TP01",
+        "professores": [
+            "QUA"
+        ],
+        "horarios": [
+            {
+                "dia": "QUA",
+                "horario": "10:30 às 12:30",
+                "turno": "Matutino"
+            },
+            {
+                "dia": "QUA",
+                "horario": "07:30 às 10:30",
+                "turno": "Matutino"
+            }
+        ],
+        "turnos": [
+            "Matutino"
+        ]
+    },
+    {
+        "codigo": "TEC170",
+        "nome": "MECÂNICA DOS SOLOS",
+        "turma": "T01P0101",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "TEC170",
+        "nome": "MECÂNICA DOS SOLOS",
+        "turma": "P0101",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "TEC170",
+        "nome": "MECÂNICA DOS SOLOS",
+        "turma": "T01",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "TEC170",
+        "nome": "MECÂNICA DOS SOLOS",
+        "turma": "T01P0102",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "TEC170",
+        "nome": "MECÂNICA DOS SOLOS",
+        "turma": "P0102",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "TEC170",
+        "nome": "MECÂNICA DOS SOLOS",
+        "turma": "T01",
+        "professores": [],
+        "horarios": [],
+        "turnos": []
+    },
+    {
+        "codigo": "TEC171",
+        "nome": "FUNDAÇÕES E OBRAS DE TERRA",
+        "turma": "TP01",
+        "professores": [
+            "MARIA DO SOCORRO COSTA"
+        ],
+        "horarios": [
+            {
+                "dia": "TER",
+                "horario": "13:30 às 16:30",
+                "turno": "Vespertino"
+            },
+            {
+                "dia": "SEX",
+                "horario": "10:30 às 12:30",
+                "turno": "Matutino"
+            }
+        ],
+        "turnos": [
+            "Vespertino",
+            "Matutino"
+        ]
+    },
+    {
+        "codigo": "TEC172",
+        "nome": "PROJETO DE ENGENHARIA",
+        "turma": "TP01",
+        "professores": [
+            "PAULO ROBERTO LOPES LIMA"
+        ],
+        "horarios": [
+            {
+                "dia": "SEX",
+                "horario": "15:30 às 18:30",
+                "turno": "Vespertino"
+            }
+        ],
+        "turnos": [
+            "Vespertino"
+        ]
+    },
+    {
+        "codigo": "TEC172",
+        "nome": "PROJETO DE ENGENHARIA",
+        "turma": "TP02",
+        "professores": [
+            "TEREZA SIMONNE"
+        ],
+        "horarios": [
+            {
+                "dia": "QUA",
+                "horario": "09:30 às 12:30",
+                "turno": "Matutino"
+            }
+        ],
+        "turnos": [
+            "Matutino"
+        ]
+    },
+    {
+        "codigo": "TEC173",
+        "nome": "PROJETO FINAL I",
+        "turma": "P0101",
+        "professores": [
+            "MÔNICA BATISTA LEITE"
+        ],
+        "horarios": [
+            {
+                "dia": "TER",
+                "horario": "13:30 às 15:30",
+                "turno": "Vespertino"
+            }
+        ],
+        "turnos": [
+            "Vespertino"
+        ]
+    },
+    {
+        "codigo": "TEC174",
+        "nome": "PROJETO FINAL II",
+        "turma": "P0101",
+        "professores": [
+            "MÔNICA BATISTA LEITE"
+        ],
+        "horarios": [
+            {
+                "dia": "SEX",
+                "horario": "10:30 às 12:30",
+                "turno": "Matutino"
+            }
+        ],
+        "turnos": [
+            "Matutino"
+        ]
+    },
+    {
+        "codigo": "TEC175",
+        "nome": "PLANEJ. CONTR. E GERENC. DE OBRAS",
+        "turma": "TP01",
+        "professores": [
+            "TER"
+        ],
+        "horarios": [
+            {
+                "dia": "TER",
+                "horario": "10:30 às 12:30",
+                "turno": "Matutino"
+            },
+            {
+                "dia": "QUI",
+                "horario": "10:30 às 12:30",
+                "turno": "Matutino"
+            }
+        ],
+        "turnos": [
+            "Matutino"
+        ]
+    },
+    {
+        "codigo": "TEC176",
+        "nome": "ESTÁGIO SUPERVISIONADO",
+        "turma": "E01",
+        "professores": [
+            "SUÂNIA FABIELE MOITINHO"
+        ],
+        "horarios": [
+            {
+                "dia": "SEG",
+                "horario": "13:30 às 15:30",
+                "turno": "Vespertino"
+            }
+        ],
+        "turnos": [
+            "Vespertino"
+        ]
+    },
+    {
+        "codigo": "TEC179",
+        "nome": "ESTRUTURAS DE CONCRETO II",
+        "turma": "TP01",
+        "professores": [
+            "ANTONIO RIBEIRO SANTOS"
+        ],
+        "horarios": [
+            {
+                "dia": "SEG",
+                "horario": "16:30 às 18:30",
+                "turno": "Vespertino"
+            },
+            {
+                "dia": "QUA",
+                "horario": "16:30 às 18:30",
+                "turno": "Vespertino"
+            }
+        ],
+        "turnos": [
+            "Vespertino"
+        ]
+    },
+    {
+        "codigo": "TEC192",
+        "nome": "PAT. E TERAP. DAS CONSTRUÇÕES-E",
+        "turma": "TP01",
+        "professores": [
+            "SILAS DE ANDRADE PINTO"
+        ],
+        "horarios": [
+            {
+                "dia": "TER",
+                "horario": "07:30 às 09:30",
+                "turno": "Matutino"
+            },
+            {
+                "dia": "QUA",
+                "horario": "07:30 às 09:30",
+                "turno": "Matutino"
+            }
+        ],
+        "turnos": [
+            "Matutino"
+        ]
+    },
+    {
+        "codigo": "TEC194",
+        "nome": "TEC. AVANÇADA DO CONCRETO",
+        "turma": "TP01",
+        "professores": [
+            "HENRIQUE ALMEIDA SANTANA"
+        ],
+        "horarios": [
+            {
+                "dia": "SEG",
+                "horario": "15:30 às 17:30",
+                "turno": "Vespertino"
+            },
+            {
+                "dia": "QUA",
+                "horario": "09:30 às 11:30",
+                "turno": "Matutino"
+            }
+        ],
+        "turnos": [
+            "Vespertino",
+            "Matutino"
+        ]
+    },
+    {
+        "codigo": "TEC200",
+        "nome": "SIST. DE DREN. URBANA",
+        "turma": "TP01",
+        "professores": [
+            "EDUARDO HENRIQUE BORGES"
+        ],
+        "horarios": [
+            {
+                "dia": "TER",
+                "horario": "13:30 às 15:30",
+                "turno": "Vespertino"
+            },
+            {
+                "dia": "QUI",
+                "horario": "13:30 às 15:30",
+                "turno": "Vespertino"
+            }
+        ],
+        "turnos": [
+            "Vespertino"
+        ]
+    },
+    {
+        "codigo": "TEC225",
+        "nome": "MÉTODOS NUMÉRICOS I",
+        "turma": "TP01",
+        "professores": [],
+        "horarios": [
+            {
+                "dia": "QUI",
+                "horario": "15:30 às 17:30",
+                "turno": "Vespertino"
+            },
+            {
+                "dia": "SEX",
+                "horario": "13:30 às 15:30",
+                "turno": "Vespertino"
+            }
+        ],
+        "turnos": [
+            "Vespertino"
+        ]
+    },
+    {
+        "codigo": "TEC472",
+        "nome": "CARTOGRAFIA DIGITAL",
+        "turma": "TP02",
+        "professores": [
+            "ROSÂNGELA LEAL SANTOS"
+        ],
+        "horarios": [
+            {
+                "dia": "SEG",
+                "horario": "18:30 às 20:30",
+                "turno": "Noturno"
+            },
+            {
+                "dia": "QUA",
+                "horario": "18:30 às 20:30",
+                "turno": "Noturno"
+            }
+        ],
+        "turnos": [
+            "Noturno"
+        ]
+    }
+]
