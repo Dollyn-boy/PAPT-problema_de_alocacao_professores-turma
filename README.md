@@ -39,11 +39,18 @@ A instância canônica de referência é:
 
 `modelo/projeto_ic/model_ic/instancias/referencia_v001.json`
 
-Ela parte da estrutura fornecida para `referencia_v001`, com quatro correções de consistência: remove o turno repetido `Qua-vesp`, adiciona `Ter-vesp`, normaliza `9:30` para `09:30` e corrige a disciplina de `TEC217-TP01` para `TEC217`. As demais cargas, qualificações, disponibilidades e preferências foram preservadas.
+| Característica | Quantidade | 
+| --- | --- |
+| Professores | 3 |
+| Turmas | 4 |
+| Disciplina | 2 |
+| Slots Distintos | 8 |
+| Pares professor-turma | 12 |
+| Pares elegíveis | 12 |
 
-A versão recebida sem correções foi preservada em `modelo/referencias/instancia_de_referencia_recebida.json`. A antiga `reduzida_base.json`, produzida no pacote anterior, está em `modelo/referencias/reduzida_base_legada.json`; ela não é usada automaticamente pelo solver porque difere em alguns dados da referência atual.
+Como existem 3 professores e 4 turmas, a matriz de pares professor–turma possui  12 combinações. Apenas 6 são elegíveis na referência, considerando os critérios de qualificação e disponibilidade.
 
-Para a função objetivo ponderada atualmente implementada no Julia, a enumeração exaustiva das 81 atribuições possíveis dá como valores de referência `F=17`, `s_min=3`, `C=8`, `g_max=1` e `Z=9,9`, com três atribuições viáveis. Uma solução de referência é: `EXA806-T01 -> P01`, `EXA806-T02 -> P01`, `TEC217-TP01 -> P03`, `TEC217-TP02 -> P02`. Esses números foram calculados por enumeração independente em Python; ainda devem ser confirmados por execução local do Julia/CPLEX.
+O guia registra também os valores de referência obtidos por enumeração independente em Python: F=17, s_min=3, C=8, g_max=1 e Z=9,9  . Esses resultados funcionam como controles para conferir a implementação.
 
 ## Instalar dependências Python
 
@@ -89,6 +96,29 @@ python ferramentas/validar_instancia.py modelo/projeto_ic/model_ic/instancias/si
 ```
 
 O validador verifica a estrutura, IDs, turnos, horários, matriz professor-turma e algumas causas evidentes de inviabilidade. Ele não substitui o solver nem prova a viabilidade completa.
+
+## Geração de instância segundo critérios específicos
+
+"O colegiado precisa distribuir 12 turmas entre 6 professores. Alguns docentes só podem lecionar determinadas disciplinas, alguns estão indisponíveis em certos horários e há limites de carga horária."
+```powershell
+python ferramentas\gerar_instancias.py `
+  --saida modelo\projeto_ic\model_ic\instancias `
+  --nome sintetica_media `
+  --professores 6 `
+  --disciplinas 4 `
+  --turmas-por-disciplina 3 `
+  --horas-por-turma 4 `
+  --slots-por-turma 2 `
+  --densidade-qualificacao 0.60 `
+  --disponibilidade 0.80 `
+  --perfil-preferencia uniforme `
+  --modo-carga aleatoria `
+  --carga-minima 6 `
+  --carga-maxima 12 `
+  --conflitos medio `
+  --semente 42
+```
+
 
 ## Executar o modelo Julia/JuMP/CPLEX
 
