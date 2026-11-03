@@ -1,0 +1,517 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[brazilian]{babel}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs}
+\usepackage{geometry}
+\usepackage{enumitem}
+\geometry{margin=2.5cm}
+
+\newtheorem{definicao}{Definição}
+\newtheorem{proposicao}{Proposição}
+\newtheorem{observacao}{Observação}
+
+\title{Modelagem Binária para o Problema de Alocação de Professores a Turmas\\
+\large Formulação Exata de Base (PLB) com Soma Ponderada --- Guideline para Iniciação Científica}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{Definição do Problema}
+
+\begin{definicao}[Problema de Alocação de Professores a Turmas --- PAPT]
+Sejam $P$ o conjunto de professores e $T$ o conjunto de turmas de um dado período letivo. O PAPT consiste em determinar uma atribuição $\varphi: T \rightarrow P$ que associe a cada turma exatamente um professor qualificado, respeitando limites de carga horária individual e evitando conflitos de horário, de forma a maximizar a satisfação agregada das preferências docentes.
+\end{definicao}
+
+Trata-se de uma variante do \emph{Generalized Assignment Problem} (GAP): diferentemente do problema de atribuição clássico (\emph{Assignment Problem}), aqui um mesmo professor pode ser designado a mais de uma turma, sujeito a uma restrição de capacidade (carga horária). 
+
+\section{Notação}
+
+\subsection{Conjuntos}
+\begin{itemize}[leftmargin=2.2cm]
+  \item[$P$] conjunto de professores, indexado por $i = 1, \dots, n$;
+  \item[$P_L$] subconjunto de professores licenciados, afastados ou em licença ($P_L \subset P$);
+  \item[$T$] conjunto de turmas (seções de disciplina) a alocar, indexado por $j = 1, \dots, m$ --- uma turma pode ocupar mais de um turno semanal (ex.: disciplina de 60h ocupa 2 turnos/semana);
+  \item[$D$] dias da semana;
+  \item[$H$] turnos do dia: $ H=\{\text{matutino},\text{vespertino}\}$ (extensível, por exemplo com um turno noturno, sem alterar nenhuma restrição do modelo);
+  \item[$R=D\times H$] conjunto de turnos semanais, em que cada
+elemento corresponde à combinação de um dia da semana e um turno
+do dia;
+
+\item[$S$] conjunto de slots semanais fixos
+$\tau=(\text{dia},\text{horário})$, definidos institucionalmente
+pela coordenação do curso;
+
+\item[$\mathrm{Slots}(j)\subseteq S$] conjunto de slots fixos
+ocupados pela turma $j$, fornecidos como dados de entrada;
+
+\item[$\mathrm{tur}(\tau)\in R$] turno semanal ao qual pertence
+o slot $\tau$;
+
+\item[$\mathrm{Turnos}(j)\subseteq R$] conjunto dos turnos
+semanais distintos em que a turma $j$ ocorre:
+\[
+\mathrm{Turnos}(j)=
+\{\mathrm{tur}(\tau):\tau\in\mathrm{Slots}(j)\};
+\]
+  \item[$K$] conjunto de disciplinas, indexado por $k$ --- distinto de $T$ porque uma mesma disciplina pode ofertar mais de uma turma (seção) no semestre;
+  \item[$\text{Disc}(j) \in K$] disciplina à qual a turma $j$ pertence (dado externo).
+\end{itemize}
+
+\subsection{Parâmetros}
+
+\begin{itemize}[leftmargin=2.2cm]
+  \item[$q_{ij}$] $\in \{0,1\}$, igual a $1$ se o professor $i$
+  é qualificado para lecionar a turma $j$;
+
+  \item[$w_{ij}$] $\in [0,5]$, grau de preferência do professor $i$
+  pela turma $j$. Para pares inelegíveis, pode-se definir
+  $w_{ij}=0$, uma vez que a restrição de elegibilidade impede
+  que esses pares sejam selecionados;
+
+  \item[$h_j$] carga horária semanal da turma $j$, em horas;
+
+  \item[$h_i^{\min},h_i^{\max}$] carga horária semanal mínima e
+  máxima do professor $i$. Na prática institucional considerada,
+  esses limites são $8$ e $16$ horas semanais, respectivamente;
+
+  \item[$a_{ij}$] $\in \{0,1\}$, igual a $1$ se o professor $i$
+  está disponível em todos os slots de $\mathrm{Slots}(j)$, isto é,
+  \[
+  a_{ij}=1
+  \iff
+  \mathrm{Slots}(j)\cap
+  \mathrm{Indisponibilidade}_i=\emptyset;
+  \]
+
+  \item[$e_{ij}$] $=q_{ij}a_{ij}\in\{0,1\}$, elegibilidade
+  combinada do professor $i$ para a turma $j$, calculada
+  no pré-processamento;
+
+  \item[$F(x)$] preferência total da alocação:
+  \[
+  F(x)=\sum_{i\in P}\sum_{j\in T}w_{ij}x_{ij};
+  \]
+
+  \item[$C(z)$] número total de turnos semanais ocupados por
+  professores:
+  \[
+  C(z)=\sum_{i\in P}\sum_{r\in R}z_{ir}.
+  \]
+\end{itemize}
+\subsection{Variáveis de decisão}
+\begin{align}
+x_{ij} &\in \{0,1\}, \quad \forall\, i \in P,\ j \in T, \notag\\
+&\text{onde } x_{ij}=1 \iff \text{o professor }i\text{ é alocado à turma }j; \notag\\[2pt]
+z_{ir} &\in \{0,1\}, \quad \forall\, i \in P,\ r \in R, \notag\\
+&\text{onde } z_{ir}=1 \iff \text{o professor }i\text{ tem aula em pelo menos uma turma no turno }r; \notag\\[2pt]
+g_{ik} &\in \{0,1\}, \quad \forall\, i \in P,\ k \in K, \notag\\
+&\text{onde } g_{ik}=1 \iff \text{o professor }i\text{ leciona ao menos uma turma da disciplina }k; \notag\\[2pt]
+\underline{s} &\in \mathbb{R}_{\geq 0}, \notag\\
+\overline{g} &\in \mathbb{Z}_{\geq 0}. \notag
+\end{align}
+
+$x_{ij}$ é a variável central do modelo, indicando a alocação efetiva. $z_{ir}$ registra os turnos em que cada professor precisa comparecer à universidade e permite medir a compactação da distribuição semanal. $g_{ik}$ registra se o professor leciona ao menos uma turma da disciplina $k$, sem contar seções paralelas como disciplinas diferentes. A variável $\underline{s}$ representa o piso de satisfação entre os professores fora de $P_L$, enquanto $\overline{g}$ representa o maior número de disciplinas distintas atribuído a qualquer professor.
+
+
+\section{Formulação Matemática}
+
+O modelo utiliza uma única função objetivo construída por soma ponderada dos quatro critérios: maximizar a preferência total, maximizar a menor satisfação individual, minimizar o total de turnos professor-turno ocupados e minimizar o maior número de disciplinas distintas atribuído a um professor. Para tornar os critérios mais comparáveis, as medidas são normalizadas por limites superiores de referência. Os pesos adotados nesta versão são parâmetros de preferência do decisor, não prioridades absolutas.
+
+\begin{align}
+\text{(PAPT-SW)} \qquad \max \quad
+Z ={}& \alpha_F\frac{F(x)}{5|T|}
++ \alpha_S\frac{\underline{s}}{5|T|}
+- \alpha_C\frac{C(z)}{|P||R|}
+- \alpha_G\frac{\overline{g}}{|K|}, \label{eq:objetivo_ponderado}\\[3pt]
+\text{com} \quad
+& F(x)=\sum_{i\in P}\sum_{j\in T}w_{ij}x_{ij}, \notag\\
+& C(z)=\sum_{i\in P}\sum_{r\in R}z_{ir}. \notag
+\end{align}
+
+Nesta versão, são utilizados os pesos
+\[
+\alpha_F=0{,}60,\qquad \alpha_S=0{,}20,\qquad
+\alpha_C=0{,}10,\qquad \alpha_G=0{,}10,
+\]
+com $\alpha_F+\alpha_S+\alpha_C+\alpha_G=1$. Os denominadores normalizam os critérios: $5|T|$ é um limite superior para a preferência total e para a satisfação de um professor; $|P||R|$ é um limite superior para o número de turnos professor-turno; e $|K|$ é um limite superior para o número de disciplinas distintas atribuídas a um professor.
+
+\begin{align}
+\text{sujeito a}\quad
+& \sum_{i\in P}x_{ij}=1, && \forall j\in T, \label{eq:cobertura}\\
+& x_{ij}\leq e_{ij}, && \forall i\in P,\ j\in T, \label{eq:elegibilidade}\\
+& h_i^{\min}\leq\sum_{j\in T}h_jx_{ij}\leq h_i^{\max},
+&& \forall i\in P\setminus P_L, \label{eq:capacidade}\\
+& \underline{s}\leq\sum_{j\in T}w_{ij}x_{ij},
+&& \forall i\in P\setminus P_L, \label{eq:piso_satisfacao}\\
+& x_{ij}\leq g_{i,\mathrm{Disc}(j)}, && \forall i\in P,\ j\in T, \label{eq:liga_disciplina}\\
+& g_{ik}\leq\sum_{j\in T:\,\mathrm{Disc}(j)=k}x_{ij},
+&& \forall i\in P,\ k\in K, \label{eq:liga_disciplina_reversa}\\
+& \overline{g}\geq\sum_{k\in K}g_{ik}, && \forall i\in P, \label{eq:teto_disciplinas}\\
+& \sum_{j:\,\tau\in\mathrm{Slots}(j)}x_{ij}\leq1,
+&& \forall i\in P,\ \tau\in S, \label{eq:conflito}\\
+& x_{ij}\leq z_{ir},
+&& \forall i\in P,\ j\in T,\ r\in\mathrm{Turnos}(j), \label{eq:compactacao}\\
+& z_{ir}\leq\sum_{j\in T:\,r\in\mathrm{Turnos}(j)}x_{ij},
+&& \forall i\in P,\ r\in R, \label{eq:compactacao_reversa}\\
+& x_{ij}\in\{0,1\}, && \forall i\in P,\ j\in T, \label{eq:dom_x}\\
+& z_{ir}\in\{0,1\}, && \forall i\in P,\ r\in R, \label{eq:dom_z}\\
+& g_{ik}\in\{0,1\}, && \forall i\in P,\ k\in K. \label{eq:dom_g}
+\end{align}
+
+A soma ponderada permite que os critérios compensem parcialmente uns aos outros: uma solução com preferência total menor ainda pode ser escolhida se apresentar vantagens suficientes nos outros termos da função objetivo. Portanto, diferentemente da otimização lexicográfica, nenhum critério tem prioridade absoluta garantida apenas pela formulação. A escolha dos pesos deve refletir as prioridades institucionais e, em estudos experimentais, pode ser avaliada por análise de sensibilidade.
+
+As ligações diretas e reversas de $g_{ik}$ e $z_{ir}$, combinadas com as penalizações na função objetivo, fazem com que essas variáveis representem, na solução ótima, as disciplinas e os turnos efetivamente ocupados. Como $\alpha_S>0$, a variável $\underline{s}$ assume o valor da menor satisfação entre os professores de $P\setminus P_L$ na solução escolhida. A restrição de carga mínima implica que todo professor nesse conjunto recebe carga positiva quando $h_i^{\min}>0$.
+
+\section{Interpretação das Restrições}
+\begin{itemize}
+  \item \textbf{(\ref{eq:cobertura}) Cobertura.} Garante que toda turma seja atribuída a exatamente um professor.
+  \item \textbf{(\ref{eq:elegibilidade}) Elegibilidade.} Impede que um professor seja designado a uma turma para a qual não é qualificado ou não está disponível em todos os slots exigidos. O parâmetro $e_{ij}=q_{ij}a_{ij}$ reúne essas duas condições no pré-processamento.
+  \item \textbf{(\ref{eq:capacidade}) Capacidade de horas.} Restringe a carga semanal de cada professor em $P\setminus P_L$ ao intervalo $[h_i^{\min},h_i^{\max}]$.
+  \item \textbf{(\ref{eq:piso_satisfacao}) Piso de satisfação.} Impõe que $\underline{s}$ não ultrapasse a satisfação de nenhum professor em $P\setminus P_L$. Como $\underline{s}$ tem coeficiente positivo na função objetivo, ela representa a menor satisfação individual da solução escolhida; esse critério pode ser compensado pelos demais termos ponderados.
+  \item \textbf{(\ref{eq:liga_disciplina})--(\ref{eq:liga_disciplina_reversa}) Ligação turma--disciplina.} A ligação direta ativa $g_{ik}$ quando o professor assume uma turma da disciplina $k$. A ligação reversa impede que $g_{ik}=1$ quando nenhuma turma dessa disciplina foi atribuída ao professor. Em conjunto, as duas desigualdades representam exatamente a condição lógica pretendida.
+  \item \textbf{(\ref{eq:teto_disciplinas}) Teto de disciplinas.} Faz com que $\overline{g}$ seja pelo menos o número de disciplinas distintas de cada professor. Como $\overline{g}$ é penalizado na função objetivo, o modelo tende a minimizar o maior desses números em troca dos demais critérios.
+  \item \textbf{(\ref{eq:conflito}) Conflito de horário.} Impede que um professor seja atribuído a duas turmas que compartilhem o mesmo slot semanal $\tau$.
+  \item \textbf{(\ref{eq:compactacao})--(\ref{eq:compactacao_reversa}) Compactação por turnos.} A ligação direta exige $z_{ir}=1$ se o professor assume uma turma que ocorre no turno $r$. A ligação reversa exige $z_{ir}=0$ quando nenhuma turma atribuída a esse professor ocorre no período. Portanto, $\sum_{i,r}z_{ir}$ conta exatamente os turnos professor-turno ocupados e sua quantidade é penalizada na função objetivo.
+\end{itemize}
+
+\paragraph{Exemplo de verificação.} Considere um professor $i$ alocado a duas turmas de 60h ($h_j=4$, 2 turnos semanais cada). Se ambas ocorrem às terças e quintas (ainda que em horários diferentes, como 9h30--11h30 e 13h30--15h30), então:
+\begin{itemize}
+    \item $\text{Slots}(j_1)=\{(\text{Terça}, \text{9h30}), (\text{Quinta}, \text{9h30})\}$ e $\text{Slots}(j_2)=\{(\text{Terça}, \text{13h30}), (\text{Quinta}, \text{13h30})\}$;
+    \item Os períodos correspondentes via $\text{tur}(\tau)$ são $\text{Turnos}(j_1) = \{\text{Terça-matutino}, \text{Quinta-matutino}\}$ e $\text{Turnos}(j_2) = \{\text{Terça-vespertino}, \text{Quinta-vespertino}\}$.
+\end{itemize}
+Pelas restrições (\ref{eq:compactacao}) e (\ref{eq:compactacao_reversa}), as variáveis auxiliares $z_{ir}$ assumem valor 1 exatamente nos quatro períodos distintos em que o professor possui aulas ($\text{Terça-matutino}, \text{Quinta-matutino}, \text{Terça-vespertino}, \text{Quinta-vespertino}$). Na função objetivo ponderada, o total de períodos professor-período ocupados é penalizado, mas pode haver compensação entre esse critério e os demais.
+
+\section{Instância Reduzida}
+\begin{itemize}
+    \item [\emph{$P$}]$ = \{ Ana\ Lucia, \ Pamela, \ Elinaldo \}$
+    \item [\emph{$T$}] $ =  \{ EXA \ 806\ T01 , \ EXA \ 806 \ T02, \ TEC \ 217 \ TP01, \ TEC \ 217 \ TP02  \}$
+    \item [\emph{$K$}] $= \{EXA \ 806, \, TEC \ 217 \}$
+    \item [\emph{$S$}] $= \{(Segunda, 7:30), \ (Segunda, 9:30),\ (Segunda, 13:30),\ (Segunda, 15:30),\ (Segunda, 17:30),\ (Terça, 7:30), \ (Terça, 9:30),\ (Terça, 13:30),\ (Terça, 15:30),\ (Terça, 17:30),\  (Quarta, 7:30), \ (Quarta, 9:30),\ (Quarta, 13:30),\ (Quarta, 15:30),\ (Quarta, 17:30),\ (Quinta, 7:30), \ (Quinta, 9:30),\ (Quinta, 13:30),\ (Quinta, 15:30),\ (Quinta, 17:30), \ (Sexta, 7:30), \ (Sexta, 9:30),\ (Sexta, 13:30),\ (Sexta, 15:30),\ (Sexta, 17:30), \}$
+    \item [\emph{$D$}] $= \{Segunda, Terça, Quarta, Quinta, Sexta\}$
+\end{itemize}
+\subsection{Mapeamento turma--disciplina, turnos e períodos}
+\begin{center}
+\small
+\begin{tabular}{llccc}
+\toprule
+$j$ & $\text{Disc}(j)$ & $\text{Slots}(j)$ & $\text{Turnos}(j)$ & $h_j$ \\
+\midrule
+EXA806-T01  & EXA806 & \{(Seg,17:30), (Qua,17:30)\} & \{Seg-vesp, Qua-vesp\} & 4 \\
+EXA806-T02  & EXA806 & \{(Ter,9:30), (Qui,9:30)\}   & \{Ter-mat, Qui-mat\}   & 4 \\
+TEC217-TP01 & TEC217 & \{(Seg,13:30), (Qua,13:30)\} & \{Seg-vesp, Qua-vesp\} & 4 \\
+TEC217-TP02 & TEC217 & \{(Ter,15:30), (Qui,15:30)\} & \{Ter-vesp, Qui-vesp\} & 4 \\
+\bottomrule
+\end{tabular}
+\end{center}
+Convenção: $\text{tur}(\tau)$ é matutino se o slot começa antes das 12h e vespertino caso contrário. Os resultados a seguir não dependem de onde se classifica o slot das 17h30, pois a T01 é sempre da Ana.
+
+\subsection{Qualificação, disponibilidade e elegibilidade ($q_{ij}$, $a_{ij}$, $e_{ij}=q_{ij}a_{ij}$)}
+\begin{center}
+\small
+\begin{tabular}{lcccc}
+\toprule
+ & EXA806-T01 & EXA806-T02 & TEC217-TP01 & TEC217-TP02 \\
+\midrule
+Ana Lúcia & $q{=}1,a{=}1\Rightarrow e{=}1$ & $q{=}1,a{=}1\Rightarrow e{=}1$ & $q{=}0\Rightarrow e{=}0$ & $q{=}0\Rightarrow e{=}0$ \\
+Pamela    & $q{=}1,a{=}0\Rightarrow e{=}0$ & $q{=}1,a{=}1\Rightarrow e{=}1$ & $q{=}1,a{=}0\Rightarrow e{=}0$ & $q{=}1,a{=}1\Rightarrow e{=}1$ \\
+Elinaldo  & $q{=}0\Rightarrow e{=}0$ & $q{=}0\Rightarrow e{=}0$ & $q{=}1,a{=}1\Rightarrow e{=}1$ & $q{=}1,a{=}1\Rightarrow e{=}1$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+\emph{Pamela tem indisponibilidade pessoal às segundas-feiras; como EXA806-T01 e TEC217-TP01 ocupam esse dia, $a_{ij}=0$ para as duas, mesmo com $q_{ij}=1$. Logo, ela é qualificada, mas não elegível.}
+
+\subsection{Preferências ($w_{ij}$, escala de 0 a 5)}
+
+A tabela apresenta as preferências docentes para os pares elegíveis.
+O símbolo ``--'' indica um par inelegível, para o qual se define
+$w_{ij}=0$ na função objetivo. Como a restrição de elegibilidade
+impõe $x_{ij}=0$ nesses casos, essa convenção não altera o valor
+da preferência total.
+
+\begin{center}
+\small
+\begin{tabular}{lcccc}
+\toprule
+ & EXA806-T01 & EXA806-T02 & TEC217-TP01 & TEC217-TP02 \\
+\midrule
+Ana Lúcia & 4 & 5 & -- & -- \\
+Pamela    & -- & 4 & -- & 3 \\
+Elinaldo  & -- & -- & 5 & 1 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{Parâmetros da instância reduzida}
+
+A instância reduzida utiliza uma escala de carga horária proporcional
+à faixa institucional de referência $[8,16]$. Como as cargas horárias
+foram reduzidas pela metade, os limites de cada professor são:
+
+\begin{itemize}
+    \item $h_i^{\min}=4$ horas semanais;
+    \item $h_i^{\max}=8$ horas semanais;
+    \item $\forall i\in P\setminus P_L$.
+\end{itemize}
+
+Nesta instância, considera-se $P_L=\emptyset$, de modo que todos os
+professores estão sujeitos aos limites de carga horária.
+
+\subsection{Viabilidade das combinações}
+
+As restrições de cobertura e elegibilidade determinam previamente
+a alocação de EXA806-T01 para Ana Lúcia e de TEC217-TP01 para
+Elinaldo. Restam, portanto, quatro combinações possíveis para as
+turmas EXA806-T02 e TEC217-TP02.
+
+A restrição de capacidade exige que cada professor receba entre
+4 e 8 horas semanais. Nenhuma das combinações consideradas viola
+a restrição de conflito por slot; a viabilidade depende, portanto,
+também do cumprimento dos limites individuais de carga horária.
+
+
+\begin{table}[htbp]
+\centering
+\caption{Carga horária semanal por combinação e viabilidade}
+\label{tab:viabilidade}
+\small
+\begin{tabular}{lcccl}
+\toprule
+Combinação & Ana Lúcia & Pamela & Elinaldo & Viável? \\
+\midrule
+1 --- T02$\to$Ana, TP02$\to$Pamela
+& 8 & 4 & 4 & Sim \\
+
+2 --- T02$\to$Ana, TP02$\to$Elinaldo
+& 8 & 0 & 8 & Não: Pamela abaixo da carga mínima \\
+
+3 --- T02$\to$Pamela, TP02$\to$Pamela
+& 4 & 8 & 4 & Sim \\
+
+4 --- T02$\to$Pamela, TP02$\to$Elinaldo
+& 4 & 4 & 8 & Sim \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+A Combinação 2 é inviável porque Pamela recebe carga horária igual
+a zero, violando a carga mínima de 4 horas semanais. As demais
+combinações respeitam os limites de carga horária de todos os
+professores.
+
+
+\subsection{Avaliação pela função objetivo ponderada}
+
+As duas turmas previamente determinadas contribuem com uma preferência total de $4+5=9$ em todas as combinações. Para esta instância, os pesos são $\alpha_F=0{,}60$, $\alpha_S=0{,}20$, $\alpha_C=0{,}10$ e $\alpha_G=0{,}10$. Como $|T|=4$, $|P|=3$, $|R|=10$ e $|K|=2$, a função objetivo utilizada é
+\[
+Z=0{,}60\frac{F(x)}{20}
++0{,}20\frac{\underline{s}}{20}
+-0{,}10\frac{C(z)}{30}
+-0{,}10\frac{\overline{g}}{2}.
+\]
+
+\begin{table}[htbp]
+\centering
+\caption{Comparação das combinações pela função objetivo ponderada}
+\label{tab:resumo_final}
+\small
+\begin{tabular}{lcccccc}
+\toprule
+Combinação & Viável & Preferência total $F$
+& Piso $\underline{s}$
+& Turnos $C(z)$
+& Teto $\overline{g}$
+& Objetivo $Z$ \\
+\midrule
+1 --- Ana / Pamela
+& Sim & 17 & 3 & 8 & 1 & \textbf{0,4633} \\
+
+2 --- Ana / Elinaldo
+& Não & -- & -- & -- & -- & -- \\
+
+3 --- Pamela / Pamela
+& Sim & 16 & 4 & 8 & 2 & 0,3933 \\
+
+4 --- Pamela / Elinaldo
+& Sim & 14 & 4 & 8 & 1 & 0,3833 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Com os pesos adotados, a Combinação 1 tem o maior valor da função objetivo, $Z\approx0{,}4633$. Nela, EXA806-T01 e EXA806-T02 são atribuídas a Ana Lúcia, TEC217-TP02 a Pamela e TEC217-TP01 a Elinaldo. A preferência total é
+\[
+F=4+5+3+5=17.
+\]
+
+Ana Lúcia ocupa quatro turnos semanais, enquanto Pamela e Elinaldo ocupam dois turnos cada. Portanto,
+\[
+C(z)=4+2+2=8.
+\]
+
+As satisfações individuais são 9 para Ana Lúcia, 3 para Pamela e 5 para Elinaldo. Logo,
+\[
+\underline{s}=\min\{9,3,5\}=3.
+\]
+
+Cada professor leciona apenas uma disciplina distinta nessa combinação. Consequentemente,
+\[
+\overline{g}=1.
+\]
+
+A Combinação 3 apresenta um piso de satisfação maior ($\underline{s}=4$), mas obtém preferência total menor ($F=16$) e tem teto de disciplinas maior ($\overline{g}=2$). Com os pesos definidos, seu valor objetivo fica abaixo do da Combinação 1. Essa conclusão é específica aos pesos adotados: outras ponderações podem produzir outra alocação ótima. A análise de sensibilidade dos pesos é, portanto, recomendável antes de interpretar a solução como preferência institucional definitiva.
+
+\section{Melhorias Futuras}
+\begin{itemize}
+    \item \textbf{Sobreposição Parcial de Horários}. Não há nada no modelo que trate casos em que os turnos se sobrepõe apenas parcialmente (um horário às 13:30 e uma turma de 2 horas e um horário as 13:30 em uma turma de 3 horas).
+    \item \textbf{Teórica-Prática}. Não há nada no modelo que pense a relação turma teórica-prática na UEFS.
+    \item \textbf{Equidade além do piso maximin}. A formulação incorpora a satisfação mínima dos professores fora de $P_L$ como um dos termos da função objetivo ponderada, sem prioridade absoluta sobre os demais critérios. Como extensão, pode-se estudar outros indicadores de equidade, por exemplo, a dispersão entre satisfações individuais.
+\end{itemize}
+
+\section{Revisão Crítica e Refinamentos do Modelo}\label{sec:refinamentos}
+
+
+\subsection{Formulações de Programação Inteira para Alocação Professor-Turma}
+
+
+Em essência, o PAPT trata-se de uma variante do Problema de Designação Generalizada \cite{arenales2007pesquisa}, que diferentemente do problema de designação clássico, aqui um mesmo agente(professor) pode ser designado a mais de um evento (turma), pré-definido, fixo e sujeito a restrições de capacidade (carga horária). 
+
+Em termos de complexidade, esse tipo de problema é classificado como NP-Difícil \cite{martellototh1990}. Qualquer solução manual é uma tarefa difícil, que consome uma considerável parcela de tempo do funcionário responsável e, muitas das vezes, pode gerar soluções insatisfatórias com relação a vários aspectos que podem ser extremamente específicos.
+
+Essa especificidade fica ainda mais evidente quando lidamos com o escopo universitário, que por natureza possue restrições difíceis de padronizar. Formulações de programação inteira para esse tipo de problema em instituições de ensino superior já foram amplamente exploradas na literatura. Daskalaki, Birbas e Housos (2004) \cite{daskalaki2004} apresentam uma das formulações de referência para o problema de \emph{university timetabling}, suficientemente flexível para acomodar múltiplos aspectos simultaneamente: alocação de períodos consecutivos, grade completa, sessões repetitivas (como aulas de laboratório) e preferências de horário e de sala dos professores. Nogueira (2018) \cite{nogueira2018} aplica formulação semelhante a um caso real brasileiro (ICEA/UFOP), com variável de decisão indexada simultaneamente por
+professor, disciplina, turma, dia e horário ($x_{p,m,t,d,h}$), com função objetivo voltada à minimização do número de dias letivos de cada professor.
+
+O modelo aqui proposto (PAPT) se diferencia dessas duas formulações em um
+ponto central: o horário de cada turma não é decidido pelo modelo, mas tratado como parâmetro de entrada ($\text{Slots}(j)$), definido previamente pela coordenação do curso. Essa escolha não decorre de uma limitação da abordagem, mas de uma característica observada no processo real da UEFS: a grade de horários já se encontraconsolidada pelo colegiado antes da etapa de alocação docente, restando ao coordenador
+de área apenas a decisão de qual professor assume cada turma. Esse recorte reduz a variável de decisão de três ou mais índices, como em \cite{nogueira2018}, para apenas dois ($x_{ij}$), com impacto direto sobre a dimensão do espaço de busca.
+
+\subsection{Casos Reais em Universidades Brasileiras}
+
+As universidades brasileiras têm autonomia para gerir a sua distribuição de turmas, horários e professores. Logo, mesmo sujeitas às mesmas diretrizes gerais (MEC) ainda há bastante diversidade no fluxo de decisões que levam à configuração atual de um semestre.
+
+Em seu trabalho \cite{modesto2025} não apenas criou uma modelagem sofisticada utilizando programação inteira, como implementou um software, que substituiu o software pago que era utilizado pelos coordenadores da instituição de ensino em Minas Gerais. O software implementado não só comtemplava todas as particularidades do corpo docente da instituição como também provou-se mais eficiente ao reduzir o número de revisões manuais para basicamente zero. 
+
+Nesse caso, porém, cada matéria já vem pronto no arquivo de entrada, como dado, não como decisão. Ou seja, esse modelo resolve exatamente a metade complementar do PAPT, uma vez que a alocação professor-disciplina já está decidida \textit{a priori}, e apenas a dimensão temporal permanece em aberto, oque representa exatamente o par de decisões que, no caso da UEFS, ocorre na ordem inversa. Essa correspondência de papéis reforça que a separação entre \emph{quem leciona} e \emph{quando ocorre}, adotada neste trabalho, não é uma simplificação isolada, mas um recorte recorrente na literatura aplicada brasileira.
+
+Já \cite{souzafilho2009} trata um caso de escala comparável à de um único departamento(Departamento de Tecnologias e Linguagens, UFRRJ), e incorpora duas dimensões ausentes do PAPT: a capacidade física de salas por dia, e um sistema de rodízio entre semestres, de modo que um professor sobrecarregado ou alocado em dias indesejados em um período
+não se mantenha na mesma situação no período seguinte. Essa segunda contribuição já se encontra registrada como extensão multiperíodo no presente trabalho, embora ainda não incorporada ao modelo piloto, por depender de dados longitudinais ainda não coletados. A restrição de capacidade de salas, por sua vez, permanece uma lacuna declarada: o PAPT,
+tal como formulado, assume implicitamente que a infraestrutura física nunca é o fator limitante da alocação, hipótese razoável apenas enquanto o número de turmas simultâneas por horário não se aproximar da capacidade real de salas da UEFS.
+
+
+Em conjunto, esses e outros trabalhos posicionam o PAPT dentro de uma linha estabelecida
+de aplicações de programação inteira a casos reais de universidades brasileiras,
+evidenciando ao mesmo tempo um conjunto de dimensões institucionais --- capacidade de
+salas, espaçamento mínimo entre aulas, turnos de trabalho explícitos e tratamento
+diferenciado de cargos administrativos --- que não constituem falhas de modelagem, mas
+escolhas de escopo justificadas pela realidade observada na UEFS, e que permanecem registradas como limitações explícitas e direções de
+trabalho futuro.
+
+
+\begin{table}[htbp]
+\centering
+\caption{Correspondência entre elementos do PAPT e suas inspirações na literatura}
+\label{tab:correspondencia_literatura}
+\small
+\begin{tabular}{p{3.4cm}p{3.0cm}p{6.2cm}}
+\toprule
+\textbf{Elemento do modelo}
+& \textbf{Mecanismo}
+& \textbf{Inspiração na literatura} \\
+\midrule
+
+Estrutura geral
+& GAP
+& Caracterização formal como variante do
+\textit{Generalized Assignment Problem}
+\cite{arenales2007pesquisa}, com propriedades estruturais discutidas
+em \cite{dantzig1963,martellototh1990}. \\
+
+Decomposição entre quem e quando
+& $\mathrm{Slots}(j)$ como parâmetro
+& Separação entre decisões de alocação docente e de horários,
+relacionada à abordagem de duas fases em
+\cite{permanhane2014} e à decisão complementar estudada em
+\cite{modesto2025}. \\
+
+Ligação turma--disciplina
+& $x_{ij}\leq g_{i,\mathrm{Disc}(j)}$
+& Relação entre a atribuição de turmas e a identificação das
+disciplinas lecionadas por cada professor, análoga à ligação
+utilizada em \cite{permanhane2014}. \\
+
+Teto de disciplinas
+& $\overline{g}\geq\sum_{k\in K}g_{ik}$
+& Critério minimax que limita o maior número de disciplinas
+distintas atribuídas a um professor. Trata-se de um critério
+explícito da formulação proposta. \\
+
+Compactação por turnos
+& $z_{ir}$
+& Variável indicadora de ocupação de um turno semanal pelo
+professor. O mecanismo se relaciona à compactação temporal
+estudada em \cite{nogueira2018,permanhane2014}, embora a unidade
+contabilizada no PAPT seja o turno semanal, e não o dia. \\
+
+Conflito por slot
+& Restrição agregada por slot
+& Formulação que limita a uma turma por professor em cada slot
+fixo, sem necessidade de enumerar pares de turmas conflitantes.
+A escolha se relaciona ao princípio de fortalecimento de
+formulações discutido em \cite{murthy2019}. \\
+
+Exceção de cargos administrativos
+& Extensão não incorporada
+& Tratamento diferenciado de coordenadores e ocupantes de cargos
+administrativos, observado em
+\cite{souzafilho2009,permanhane2014}. \\
+
+\bottomrule
+\end{tabular}
+\end{table}
+
+A correspondência apresentada evidencia que a formulação proposta
+combina elementos relacionados à literatura de alocação e
+programação de horários com escolhas específicas do contexto
+institucional da UEFS. A representação da elegibilidade, a ligação
+entre turmas e disciplinas e a contabilização dos turnos ocupados
+são componentes distintos do modelo, enquanto o piso de satisfação
+e o teto do número de disciplinas estabelecem critérios explícitos
+de equidade e distribuição do trabalho docente.
+
+A restrição de conflito por slot é formulada diretamente a partir
+da estrutura de horários fixos adotada no PAPT. Embora sua
+construção seja compatível com princípios gerais de fortalecimento
+de formulações de programação inteira, a correspondência com
+\cite{murthy2019} deve ser entendida como inspiração metodológica,
+e não como afirmação de que aquele trabalho apresenta exatamente
+a mesma restrição para o problema de alocação docente.
+
+
+\subsection{Síntese e Posicionamento do Trabalho}
+% Objetivo: o parágrafo mais importante da seção inteira. Em 4-6
+% frases, diga exatamente o que nenhum desses trabalhos faz, e que
+% o seu faz -- a combinação específica de (a) caso real UEFS, (b)
+% modelo PLB com objetivo ponderado incluindo satisfação mínima, (c) extensão planejada para
+% meta-heurística como próxima fase.
+ 
+O Problema de Alocação de Professores a Turmas (PAPT), apesar de compartilhar similaridades com o University Course Timetabling Problem (UCTP), é essencialmente diferente, uma vez que o horário de cada turma é tratado como parâmetro de entrada, e não como variável de decisão do modelo; a decisão central do PAPT reduz-se, assim, a determinar qual
+professor assume cada turma, respeitando qualificação, disponibilidade, capacidade e equidade. Essa escolha de escopo, embora mais restrita que a da maioria dos trabalhos revisados, reflete fielmente o processo real observado nos colegiados da UEFS, e permite tratar o problema como uma variante do \textit{Generalized
+Assignment Problem}, com propriedades estruturais bem estabelecidas
+\cite{arenales2007pesquisa,martellototh1990}.
+
+
+Essa formulação exata não constitui, contudo, o ponto de chegada do projeto, mas o seu
+ponto de partida: definida como benchmark de qualidade em instâncias reduzidas, servirá
+de referência para a avaliação comparativa da abordagem heurística ou meta-heurística a
+ser desenvolvida na etapa seguinte do trabalho, momento em que o modelo exato for
+aplicado ao conjunto completo de dados da universidade -- cenário em que o custo
+computacional da formulação exata tende a se tornar proibitivo, conforme evidenciado
+pelos tempos de execução relatados em \cite{nogueira2018,permanhane2014}.
+
+\bibliographystyle{plain}
+\bibliography{referencias}
+
+\end{document}

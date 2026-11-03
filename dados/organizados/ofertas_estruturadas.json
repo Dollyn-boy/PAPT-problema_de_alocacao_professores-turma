@@ -1,0 +1,2875 @@
+[
+  {
+    "codigo": "CHF215",
+    "nome": "INTRODUÇÃO À SOCIOLOGIA",
+    "turma": "T01",
+    "professores": [
+      "ROBERTA BRANDÃO NOVAES"
+    ],
+    "horarios": [
+      {
+        "dia": "Sex",
+        "horario": "15:30",
+        "horario_fim": "18:30",
+        "horario_completo": "15:30 às 18:30",
+        "duracao_minutos": 180,
+        "duracao_horas": 3.0,
+        "turno": "Sex-vesp"
+      }
+    ],
+    "turnos": [
+      "Sex-vesp"
+    ]
+  },
+  {
+    "codigo": "CHF987",
+    "nome": "PSICOLOGIA DAS RELAÇÕES HUMANAS-E",
+    "turma": "T01",
+    "professores": [
+      "LOUISE CRISTINE SANTOS"
+    ],
+    "horarios": [
+      {
+        "dia": "Seg",
+        "horario": "09:30",
+        "horario_fim": "12:30",
+        "horario_completo": "09:30 às 12:30",
+        "duracao_minutos": 180,
+        "duracao_horas": 3.0,
+        "turno": "Seg-mat"
+      }
+    ],
+    "turnos": [
+      "Seg-mat"
+    ]
+  },
+  {
+    "codigo": "CIS116",
+    "nome": "EXERC. PROF. DO ENGENHEIRO",
+    "turma": "T01",
+    "professores": [
+      "ARIADNE MURICY BARRETO"
+    ],
+    "horarios": [
+      {
+        "dia": "Sex",
+        "horario": "15:30",
+        "horario_fim": "18:30",
+        "horario_completo": "15:30 às 18:30",
+        "duracao_minutos": 180,
+        "duracao_horas": 3.0,
+        "turno": "Sex-vesp"
+      }
+    ],
+    "turnos": [
+      "Sex-vesp"
+    ]
+  },
+  {
+    "codigo": "CIS245",
+    "nome": "ECONOMIA APLIC. À ENGENHARIA",
+    "turma": "T01",
+    "professores": [
+      "ANTONIO ROSEVALDO"
+    ],
+    "horarios": [
+      {
+        "dia": "Seg",
+        "horario": "10:30",
+        "horario_fim": "12:30",
+        "horario_completo": "10:30 às 12:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Seg-mat"
+      },
+      {
+        "dia": "Sex",
+        "horario": "16:30",
+        "horario_fim": "18:30",
+        "horario_completo": "16:30 às 18:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Sex-vesp"
+      }
+    ],
+    "turnos": [
+      "Seg-mat",
+      "Sex-vesp"
+    ]
+  },
+  {
+    "codigo": "CIS323",
+    "nome": "ADM. APLICADA À ENGENHARIA",
+    "turma": "T01",
+    "professores": [
+      "DAISY LIMA DE SOUZA"
+    ],
+    "horarios": [
+      {
+        "dia": "Qua",
+        "horario": "16:30",
+        "horario_fim": "18:30",
+        "horario_completo": "16:30 às 18:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Qua-vesp"
+      },
+      {
+        "dia": "Sex",
+        "horario": "16:30",
+        "horario_fim": "18:30",
+        "horario_completo": "16:30 às 18:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Sex-vesp"
+      }
+    ],
+    "turnos": [
+      "Qua-vesp",
+      "Sex-vesp"
+    ]
+  },
+  {
+    "codigo": "CIS323",
+    "nome": "ADM. APLICADA À ENGENHARIA",
+    "turma": "T02",
+    "professores": [
+      "MARILÚ PEREIRA CASTRO"
+    ],
+    "horarios": [
+      {
+        "dia": "Ter",
+        "horario": "19:00",
+        "horario_fim": "23:00",
+        "horario_completo": "19:00 às 23:00",
+        "duracao_minutos": 240,
+        "duracao_horas": 4.0,
+        "turno": "Ter-not"
+      }
+    ],
+    "turnos": [
+      "Ter-not"
+    ]
+  },
+  {
+    "codigo": "CIS717",
+    "nome": "DIREITO URBANÍSTICO",
+    "turma": "T01",
+    "professores": [
+      "ADRIANA NOGUEIRA VIEIRA"
+    ],
+    "horarios": [
+      {
+        "dia": "Qui",
+        "horario": "19:00",
+        "horario_fim": "23:00",
+        "horario_completo": "19:00 às 23:00",
+        "duracao_minutos": 240,
+        "duracao_horas": 4.0,
+        "turno": "Qui-not"
+      }
+    ],
+    "turnos": [
+      "Qui-not"
+    ]
+  },
+  {
+    "codigo": "EXA170",
+    "nome": "INT. A CIENC. DA COMPUTAÇÃO",
+    "turma": "T02P0201",
+    "professores": [
+      "CLAÚDIO SÉRGIO DA SILVA"
+    ],
+    "horarios": [
+      {
+        "dia": "Seg",
+        "horario": "07:30",
+        "horario_fim": "09:30",
+        "horario_completo": "07:30 às 09:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Seg-mat"
+      }
+    ],
+    "turnos": [
+      "Seg-mat"
+    ]
+  },
+  {
+    "codigo": "EXA170",
+    "nome": "INT. A CIENC. DA COMPUTAÇÃO",
+    "turma": "T02",
+    "professores": [
+      "JULIO CÉSAR ANDRADE SILVA"
+    ],
+    "horarios": [
+      {
+        "dia": "Sex",
+        "horario": "13:30",
+        "horario_fim": "15:30",
+        "horario_completo": "13:30 às 15:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Sex-vesp"
+      }
+    ],
+    "turnos": [
+      "Sex-vesp"
+    ]
+  },
+  {
+    "codigo": "EXA170",
+    "nome": "INT. A CIENC. DA COMPUTAÇÃO",
+    "turma": "T02P0202",
+    "professores": [
+      "CLAÚDIO SÉRGIO DA SILVA"
+    ],
+    "horarios": [
+      {
+        "dia": "Seg",
+        "horario": "09:30",
+        "horario_fim": "11:30",
+        "horario_completo": "09:30 às 11:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Seg-mat"
+      }
+    ],
+    "turnos": [
+      "Seg-mat"
+    ]
+  },
+  {
+    "codigo": "EXA170",
+    "nome": "INT. A CIENC. DA COMPUTAÇÃO",
+    "turma": "T02",
+    "professores": [
+      "JULIO CÉSAR ANDRADE SILVA"
+    ],
+    "horarios": [
+      {
+        "dia": "Sex",
+        "horario": "13:30",
+        "horario_fim": "15:30",
+        "horario_completo": "13:30 às 15:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Sex-vesp"
+      }
+    ],
+    "turnos": [
+      "Sex-vesp"
+    ]
+  },
+  {
+    "codigo": "EXA170",
+    "nome": "INT. A CIENC. DA COMPUTAÇÃO",
+    "turma": "T03P0301",
+    "professores": [
+      "CLAÚDIO SÉRGIO DA SILVA"
+    ],
+    "horarios": [
+      {
+        "dia": "Sex",
+        "horario": "09:30",
+        "horario_fim": "11:30",
+        "horario_completo": "09:30 às 11:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Sex-mat"
+      }
+    ],
+    "turnos": [
+      "Sex-mat"
+    ]
+  },
+  {
+    "codigo": "EXA170",
+    "nome": "INT. A CIENC. DA COMPUTAÇÃO",
+    "turma": "T03",
+    "professores": [
+      "CLAÚDIO SÉRGIO DA SILVA"
+    ],
+    "horarios": [
+      {
+        "dia": "Sex",
+        "horario": "07:30",
+        "horario_fim": "09:30",
+        "horario_completo": "07:30 às 09:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Sex-mat"
+      }
+    ],
+    "turnos": [
+      "Sex-mat"
+    ]
+  },
+  {
+    "codigo": "EXA416",
+    "nome": "QUÍMICA APLICADA",
+    "turma": "T01P0101",
+    "professores": [
+      "JOAO BATISTA PEREIRA"
+    ],
+    "horarios": [
+      {
+        "dia": "Ter",
+        "horario": "10:30",
+        "horario_fim": "12:30",
+        "horario_completo": "10:30 às 12:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Ter-mat"
+      }
+    ],
+    "turnos": [
+      "Ter-mat"
+    ]
+  },
+  {
+    "codigo": "EXA416",
+    "nome": "QUÍMICA APLICADA",
+    "turma": "T01",
+    "professores": [
+      "JOAO BATISTA PEREIRA"
+    ],
+    "horarios": [
+      {
+        "dia": "Seg",
+        "horario": "13:30",
+        "horario_fim": "16:30",
+        "horario_completo": "13:30 às 16:30",
+        "duracao_minutos": 180,
+        "duracao_horas": 3.0,
+        "turno": "Seg-vesp"
+      }
+    ],
+    "turnos": [
+      "Seg-vesp"
+    ]
+  },
+  {
+    "codigo": "EXA416",
+    "nome": "QUÍMICA APLICADA",
+    "turma": "T01P0102",
+    "professores": [
+      "JOAO BATISTA PEREIRA"
+    ],
+    "horarios": [
+      {
+        "dia": "Ter",
+        "horario": "13:30",
+        "horario_fim": "15:30",
+        "horario_completo": "13:30 às 15:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Ter-vesp"
+      }
+    ],
+    "turnos": [
+      "Ter-vesp"
+    ]
+  },
+  {
+    "codigo": "EXA416",
+    "nome": "QUÍMICA APLICADA",
+    "turma": "T01",
+    "professores": [
+      "JOAO BATISTA PEREIRA"
+    ],
+    "horarios": [
+      {
+        "dia": "Seg",
+        "horario": "13:30",
+        "horario_fim": "16:30",
+        "horario_completo": "13:30 às 16:30",
+        "duracao_minutos": 180,
+        "duracao_horas": 3.0,
+        "turno": "Seg-vesp"
+      }
+    ],
+    "turnos": [
+      "Seg-vesp"
+    ]
+  },
+  {
+    "codigo": "EXA416",
+    "nome": "QUÍMICA APLICADA",
+    "turma": "T01P0103",
+    "professores": [
+      "JOAO BATISTA PEREIRA"
+    ],
+    "horarios": [
+      {
+        "dia": "Ter",
+        "horario": "15:30",
+        "horario_fim": "17:30",
+        "horario_completo": "15:30 às 17:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Ter-vesp"
+      }
+    ],
+    "turnos": [
+      "Ter-vesp"
+    ]
+  },
+  {
+    "codigo": "EXA416",
+    "nome": "QUÍMICA APLICADA",
+    "turma": "T01",
+    "professores": [
+      "JOAO BATISTA PEREIRA"
+    ],
+    "horarios": [
+      {
+        "dia": "Seg",
+        "horario": "13:30",
+        "horario_fim": "16:30",
+        "horario_completo": "13:30 às 16:30",
+        "duracao_minutos": 180,
+        "duracao_horas": 3.0,
+        "turno": "Seg-vesp"
+      }
+    ],
+    "turnos": [
+      "Seg-vesp"
+    ]
+  },
+  {
+    "codigo": "EXA416",
+    "nome": "QUÍMICA APLICADA",
+    "turma": "T01P0104",
+    "professores": [
+      "MARCOS DE OLIVEIRA MELO"
+    ],
+    "horarios": [
+      {
+        "dia": "Sex",
+        "horario": "07:30",
+        "horario_fim": "09:30",
+        "horario_completo": "07:30 às 09:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Sex-mat"
+      }
+    ],
+    "turnos": [
+      "Sex-mat"
+    ]
+  },
+  {
+    "codigo": "EXA416",
+    "nome": "QUÍMICA APLICADA",
+    "turma": "T01",
+    "professores": [
+      "JOAO BATISTA PEREIRA"
+    ],
+    "horarios": [
+      {
+        "dia": "Seg",
+        "horario": "13:30",
+        "horario_fim": "16:30",
+        "horario_completo": "13:30 às 16:30",
+        "duracao_minutos": 180,
+        "duracao_horas": 3.0,
+        "turno": "Seg-vesp"
+      }
+    ],
+    "turnos": [
+      "Seg-vesp"
+    ]
+  },
+  {
+    "codigo": "EXA516",
+    "nome": "GEOLOGIA BÁSICA",
+    "turma": "T01P0101",
+    "professores": [
+      "CARLOS CÉSAR UCHÔA DE"
+    ],
+    "horarios": [
+      {
+        "dia": "Ter",
+        "horario": "08:30",
+        "horario_fim": "10:30",
+        "horario_completo": "08:30 às 10:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Ter-mat"
+      }
+    ],
+    "turnos": [
+      "Ter-mat"
+    ]
+  },
+  {
+    "codigo": "EXA516",
+    "nome": "GEOLOGIA BÁSICA",
+    "turma": "T01",
+    "professores": [
+      "CARLOS CÉSAR UCHÔA DE"
+    ],
+    "horarios": [
+      {
+        "dia": "Qui",
+        "horario": "09:30",
+        "horario_fim": "12:30",
+        "horario_completo": "09:30 às 12:30",
+        "duracao_minutos": 180,
+        "duracao_horas": 3.0,
+        "turno": "Qui-mat"
+      }
+    ],
+    "turnos": [
+      "Qui-mat"
+    ]
+  },
+  {
+    "codigo": "EXA516",
+    "nome": "GEOLOGIA BÁSICA",
+    "turma": "T01P0102",
+    "professores": [
+      "CARLOS CÉSAR UCHÔA DE"
+    ],
+    "horarios": [
+      {
+        "dia": "Ter",
+        "horario": "10:30",
+        "horario_fim": "12:30",
+        "horario_completo": "10:30 às 12:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Ter-mat"
+      }
+    ],
+    "turnos": [
+      "Ter-mat"
+    ]
+  },
+  {
+    "codigo": "EXA516",
+    "nome": "GEOLOGIA BÁSICA",
+    "turma": "T01",
+    "professores": [
+      "CARLOS CÉSAR UCHÔA DE"
+    ],
+    "horarios": [
+      {
+        "dia": "Qui",
+        "horario": "09:30",
+        "horario_fim": "12:30",
+        "horario_completo": "09:30 às 12:30",
+        "duracao_minutos": 180,
+        "duracao_horas": 3.0,
+        "turno": "Qui-mat"
+      }
+    ],
+    "turnos": [
+      "Qui-mat"
+    ]
+  },
+  {
+    "codigo": "EXA702",
+    "nome": "ÁLGEBRA VETORIAL E GEOMETRIA ANALÍTICA",
+    "turma": "T01",
+    "professores": [
+      "MOACYR RODRIGUES DE"
+    ],
+    "horarios": [
+      {
+        "dia": "Qua",
+        "horario": "09:30",
+        "horario_fim": "11:30",
+        "horario_completo": "09:30 às 11:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Qua-mat"
+      },
+      {
+        "dia": "Sex",
+        "horario": "15:30",
+        "horario_fim": "17:30",
+        "horario_completo": "15:30 às 17:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Sex-vesp"
+      }
+    ],
+    "turnos": [
+      "Qua-mat",
+      "Sex-vesp"
+    ]
+  },
+  {
+    "codigo": "EXA702",
+    "nome": "ÁLGEBRA VETORIAL E GEOMETRIA ANALÍTICA",
+    "turma": "T04",
+    "professores": [
+      "JUCINEIDE SILVA SANTOS"
+    ],
+    "horarios": [
+      {
+        "dia": "Qua",
+        "horario": "13:30",
+        "horario_fim": "15:30",
+        "horario_completo": "13:30 às 15:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Qua-vesp"
+      },
+      {
+        "dia": "Sex",
+        "horario": "13:30",
+        "horario_fim": "15:30",
+        "horario_completo": "13:30 às 15:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Sex-vesp"
+      }
+    ],
+    "turnos": [
+      "Qua-vesp",
+      "Sex-vesp"
+    ]
+  },
+  {
+    "codigo": "EXA703",
+    "nome": "ÁLGEBRA LINEAR I E",
+    "turma": "T02",
+    "professores": [
+      "MARTA MADALEINE MIRANDA"
+    ],
+    "horarios": [
+      {
+        "dia": "Ter",
+        "horario": "15:30",
+        "horario_fim": "17:30",
+        "horario_completo": "15:30 às 17:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Ter-vesp"
+      },
+      {
+        "dia": "Qui",
+        "horario": "10:30",
+        "horario_fim": "12:30",
+        "horario_completo": "10:30 às 12:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Qui-mat"
+      }
+    ],
+    "turnos": [
+      "Ter-vesp",
+      "Qui-mat"
+    ]
+  },
+  {
+    "codigo": "EXA704",
+    "nome": "CÁLCULO DIFERENCIAL E INTEGRAL I E",
+    "turma": "T01",
+    "professores": [
+      "JOILMA SILVA CARNEIRO"
+    ],
+    "horarios": [
+      {
+        "dia": "Seg",
+        "horario": "16:30",
+        "horario_fim": "18:30",
+        "horario_completo": "16:30 às 18:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Seg-vesp"
+      },
+      {
+        "dia": "Qui",
+        "horario": "16:30",
+        "horario_fim": "18:30",
+        "horario_completo": "16:30 às 18:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Qui-vesp"
+      }
+    ],
+    "turnos": [
+      "Seg-vesp",
+      "Qui-vesp"
+    ]
+  },
+  {
+    "codigo": "EXA704",
+    "nome": "CÁLCULO DIFERENCIAL E INTEGRAL I E",
+    "turma": "T05",
+    "professores": [
+      "ROGÉRIO GOMES MATIAS"
+    ],
+    "horarios": [
+      {
+        "dia": "Qua",
+        "horario": "07:30",
+        "horario_fim": "09:30",
+        "horario_completo": "07:30 às 09:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Qua-mat"
+      },
+      {
+        "dia": "Sex",
+        "horario": "07:30",
+        "horario_fim": "09:30",
+        "horario_completo": "07:30 às 09:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Sex-mat"
+      }
+    ],
+    "turnos": [
+      "Qua-mat",
+      "Sex-mat"
+    ]
+  },
+  {
+    "codigo": "EXA705",
+    "nome": "CÁLCULO DIFERENCIAL E INTEGRAL II E",
+    "turma": "T02",
+    "professores": [
+      "JACQUELINE COSTA CINTRA"
+    ],
+    "horarios": [
+      {
+        "dia": "Seg",
+        "horario": "15:30",
+        "horario_fim": "17:30",
+        "horario_completo": "15:30 às 17:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Seg-vesp"
+      },
+      {
+        "dia": "Qua",
+        "horario": "07:30",
+        "horario_fim": "09:30",
+        "horario_completo": "07:30 às 09:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Qua-mat"
+      }
+    ],
+    "turnos": [
+      "Seg-vesp",
+      "Qua-mat"
+    ]
+  },
+  {
+    "codigo": "EXA706",
+    "nome": "EQUAÇÕES DIFERENCIAIS I-E",
+    "turma": "T02",
+    "professores": [
+      "MOACYR RODRIGUES DE"
+    ],
+    "horarios": [
+      {
+        "dia": "Qua",
+        "horario": "13:30",
+        "horario_fim": "15:30",
+        "horario_completo": "13:30 às 15:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Qua-vesp"
+      },
+      {
+        "dia": "Sex",
+        "horario": "09:30",
+        "horario_fim": "11:30",
+        "horario_completo": "09:30 às 11:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Sex-mat"
+      }
+    ],
+    "turnos": [
+      "Qua-vesp",
+      "Sex-mat"
+    ]
+  },
+  {
+    "codigo": "EXA707",
+    "nome": "CÁLCULO DE FUNÇÕES DE VÁRIAS VARIÁVEIS",
+    "turma": "T01",
+    "professores": [
+      "ADEMAKSON SOUZA ARAÚJO"
+    ],
+    "horarios": [
+      {
+        "dia": "Qua",
+        "horario": "07:30",
+        "horario_fim": "09:30",
+        "horario_completo": "07:30 às 09:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Qua-mat"
+      },
+      {
+        "dia": "Sex",
+        "horario": "07:30",
+        "horario_fim": "09:30",
+        "horario_completo": "07:30 às 09:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Sex-mat"
+      }
+    ],
+    "turnos": [
+      "Qua-mat",
+      "Sex-mat"
+    ]
+  },
+  {
+    "codigo": "EXA709",
+    "nome": "PROBABILIDADE E ESTATÍSTICA I E",
+    "turma": "T01",
+    "professores": [
+      "ALOISIO MACHADO DA SILVA"
+    ],
+    "horarios": [
+      {
+        "dia": "Seg",
+        "horario": "10:30",
+        "horario_fim": "12:30",
+        "horario_completo": "10:30 às 12:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Seg-mat"
+      },
+      {
+        "dia": "Qua",
+        "horario": "10:30",
+        "horario_fim": "12:30",
+        "horario_completo": "10:30 às 12:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Qua-mat"
+      }
+    ],
+    "turnos": [
+      "Seg-mat",
+      "Qua-mat"
+    ]
+  },
+  {
+    "codigo": "EXA709",
+    "nome": "PROBABILIDADE E ESTATÍSTICA I E",
+    "turma": "T04",
+    "professores": [
+      "REINALDA SOUZA OLIVEIRA"
+    ],
+    "horarios": [
+      {
+        "dia": "Ter",
+        "horario": "13:30",
+        "horario_fim": "15:30",
+        "horario_completo": "13:30 às 15:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Ter-vesp"
+      },
+      {
+        "dia": "Qui",
+        "horario": "13:30",
+        "horario_fim": "15:30",
+        "horario_completo": "13:30 às 15:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Qui-vesp"
+      }
+    ],
+    "turnos": [
+      "Ter-vesp",
+      "Qui-vesp"
+    ]
+  },
+  {
+    "codigo": "FIS110",
+    "nome": "FÍSICA I",
+    "turma": "T01P0101",
+    "professores": [
+      "ANA CARLA PEIXOTO"
+    ],
+    "horarios": [
+      {
+        "dia": "Seg",
+        "horario": "13:30",
+        "horario_fim": "15:30",
+        "horario_completo": "13:30 às 15:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Seg-vesp"
+      }
+    ],
+    "turnos": [
+      "Seg-vesp"
+    ]
+  },
+  {
+    "codigo": "FIS110",
+    "nome": "FÍSICA I",
+    "turma": "T01",
+    "professores": [
+      "SEG"
+    ],
+    "horarios": [
+      {
+        "dia": "Seg",
+        "horario": "07:30",
+        "horario_fim": "09:30",
+        "horario_completo": "07:30 às 09:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Seg-mat"
+      },
+      {
+        "dia": "Qui",
+        "horario": "07:30",
+        "horario_fim": "09:30",
+        "horario_completo": "07:30 às 09:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Qui-mat"
+      }
+    ],
+    "turnos": [
+      "Seg-mat",
+      "Qui-mat"
+    ]
+  },
+  {
+    "codigo": "FIS110",
+    "nome": "FÍSICA I",
+    "turma": "T01P0102",
+    "professores": [
+      "CARLOS EDUARDO"
+    ],
+    "horarios": [
+      {
+        "dia": "Ter",
+        "horario": "07:30",
+        "horario_fim": "09:30",
+        "horario_completo": "07:30 às 09:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Ter-mat"
+      }
+    ],
+    "turnos": [
+      "Ter-mat"
+    ]
+  },
+  {
+    "codigo": "FIS110",
+    "nome": "FÍSICA I",
+    "turma": "T01",
+    "professores": [
+      "SEG"
+    ],
+    "horarios": [
+      {
+        "dia": "Seg",
+        "horario": "07:30",
+        "horario_fim": "09:30",
+        "horario_completo": "07:30 às 09:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Seg-mat"
+      },
+      {
+        "dia": "Qui",
+        "horario": "07:30",
+        "horario_fim": "09:30",
+        "horario_completo": "07:30 às 09:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Qui-mat"
+      }
+    ],
+    "turnos": [
+      "Seg-mat",
+      "Qui-mat"
+    ]
+  },
+  {
+    "codigo": "FIS110",
+    "nome": "FÍSICA I",
+    "turma": "T01P0103",
+    "professores": [
+      "EDUARDO BRESCANSIN DE"
+    ],
+    "horarios": [
+      {
+        "dia": "Ter",
+        "horario": "10:30",
+        "horario_fim": "12:30",
+        "horario_completo": "10:30 às 12:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Ter-mat"
+      }
+    ],
+    "turnos": [
+      "Ter-mat"
+    ]
+  },
+  {
+    "codigo": "FIS110",
+    "nome": "FÍSICA I",
+    "turma": "T01",
+    "professores": [
+      "SEG"
+    ],
+    "horarios": [
+      {
+        "dia": "Seg",
+        "horario": "07:30",
+        "horario_fim": "09:30",
+        "horario_completo": "07:30 às 09:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Seg-mat"
+      },
+      {
+        "dia": "Qui",
+        "horario": "07:30",
+        "horario_fim": "09:30",
+        "horario_completo": "07:30 às 09:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Qui-mat"
+      }
+    ],
+    "turnos": [
+      "Seg-mat",
+      "Qui-mat"
+    ]
+  },
+  {
+    "codigo": "FIS210",
+    "nome": "FÍSICA II",
+    "turma": "T01P0101",
+    "professores": [
+      "WELLISSON SANTOS SILVEIRA"
+    ],
+    "horarios": [
+      {
+        "dia": "Qua",
+        "horario": "16:30",
+        "horario_fim": "18:30",
+        "horario_completo": "16:30 às 18:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Qua-vesp"
+      }
+    ],
+    "turnos": [
+      "Qua-vesp"
+    ]
+  },
+  {
+    "codigo": "FIS210",
+    "nome": "FÍSICA II",
+    "turma": "T01",
+    "professores": [
+      "ANTONIO LAFAYETTE LINS"
+    ],
+    "horarios": [
+      {
+        "dia": "Seg",
+        "horario": "16:30",
+        "horario_fim": "18:30",
+        "horario_completo": "16:30 às 18:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Seg-vesp"
+      },
+      {
+        "dia": "Sex",
+        "horario": "16:30",
+        "horario_fim": "18:30",
+        "horario_completo": "16:30 às 18:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Sex-vesp"
+      }
+    ],
+    "turnos": [
+      "Seg-vesp",
+      "Sex-vesp"
+    ]
+  },
+  {
+    "codigo": "FIS210",
+    "nome": "FÍSICA II",
+    "turma": "T01P0102",
+    "professores": [
+      "JEAN CARLOS LESSA"
+    ],
+    "horarios": [
+      {
+        "dia": "Sex",
+        "horario": "13:30",
+        "horario_fim": "15:30",
+        "horario_completo": "13:30 às 15:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Sex-vesp"
+      }
+    ],
+    "turnos": [
+      "Sex-vesp"
+    ]
+  },
+  {
+    "codigo": "FIS210",
+    "nome": "FÍSICA II",
+    "turma": "T01",
+    "professores": [
+      "ANTONIO LAFAYETTE LINS"
+    ],
+    "horarios": [
+      {
+        "dia": "Seg",
+        "horario": "16:30",
+        "horario_fim": "18:30",
+        "horario_completo": "16:30 às 18:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Seg-vesp"
+      },
+      {
+        "dia": "Sex",
+        "horario": "16:30",
+        "horario_fim": "18:30",
+        "horario_completo": "16:30 às 18:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Sex-vesp"
+      }
+    ],
+    "turnos": [
+      "Seg-vesp",
+      "Sex-vesp"
+    ]
+  },
+  {
+    "codigo": "FIS310",
+    "nome": "FÍSICA III",
+    "turma": "T01P0101",
+    "professores": [
+      "CARLOS EDUARDO"
+    ],
+    "horarios": [
+      {
+        "dia": "Ter",
+        "horario": "16:30",
+        "horario_fim": "18:30",
+        "horario_completo": "16:30 às 18:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Ter-vesp"
+      }
+    ],
+    "turnos": [
+      "Ter-vesp"
+    ]
+  },
+  {
+    "codigo": "FIS310",
+    "nome": "FÍSICA III",
+    "turma": "T01",
+    "professores": [
+      "JEAN CARLOS LESSA"
+    ],
+    "horarios": [
+      {
+        "dia": "Qua",
+        "horario": "15:30",
+        "horario_fim": "17:30",
+        "horario_completo": "15:30 às 17:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Qua-vesp"
+      },
+      {
+        "dia": "Sex",
+        "horario": "15:30",
+        "horario_fim": "17:30",
+        "horario_completo": "15:30 às 17:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Sex-vesp"
+      }
+    ],
+    "turnos": [
+      "Qua-vesp",
+      "Sex-vesp"
+    ]
+  },
+  {
+    "codigo": "FIS310",
+    "nome": "FÍSICA III",
+    "turma": "T01P0102",
+    "professores": [
+      "WELLISSON SANTOS SILVEIRA"
+    ],
+    "horarios": [
+      {
+        "dia": "Qua",
+        "horario": "13:30",
+        "horario_fim": "15:30",
+        "horario_completo": "13:30 às 15:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Qua-vesp"
+      }
+    ],
+    "turnos": [
+      "Qua-vesp"
+    ]
+  },
+  {
+    "codigo": "FIS310",
+    "nome": "FÍSICA III",
+    "turma": "T01",
+    "professores": [
+      "JEAN CARLOS LESSA"
+    ],
+    "horarios": [
+      {
+        "dia": "Qua",
+        "horario": "15:30",
+        "horario_fim": "17:30",
+        "horario_completo": "15:30 às 17:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Qua-vesp"
+      },
+      {
+        "dia": "Sex",
+        "horario": "15:30",
+        "horario_fim": "17:30",
+        "horario_completo": "15:30 às 17:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Sex-vesp"
+      }
+    ],
+    "turnos": [
+      "Qua-vesp",
+      "Sex-vesp"
+    ]
+  },
+  {
+    "codigo": "LET610",
+    "nome": "DESENHO BÁSICO",
+    "turma": "TP01",
+    "professores": [
+      "ROBSON LUIZ SANTANA"
+    ],
+    "horarios": [
+      {
+        "dia": "Ter",
+        "horario": "07:30",
+        "horario_fim": "10:30",
+        "horario_completo": "07:30 às 10:30",
+        "duracao_minutos": 180,
+        "duracao_horas": 3.0,
+        "turno": "Ter-mat"
+      }
+    ],
+    "turnos": [
+      "Ter-mat"
+    ]
+  },
+  {
+    "codigo": "LET610",
+    "nome": "DESENHO BÁSICO",
+    "turma": "TP02",
+    "professores": [
+      "ROBSON LUIZ SANTANA"
+    ],
+    "horarios": [
+      {
+        "dia": "Qui",
+        "horario": "13:30",
+        "horario_fim": "16:30",
+        "horario_completo": "13:30 às 16:30",
+        "duracao_minutos": 180,
+        "duracao_horas": 3.0,
+        "turno": "Qui-vesp"
+      }
+    ],
+    "turnos": [
+      "Qui-vesp"
+    ]
+  },
+  {
+    "codigo": "LET615",
+    "nome": "GEOMETRIA DESCRITIVA-E",
+    "turma": "TP01",
+    "professores": [
+      "IVONEIDE DE FRANÇA COSTA"
+    ],
+    "horarios": [
+      {
+        "dia": "Ter",
+        "horario": "13:30",
+        "horario_fim": "17:30",
+        "horario_completo": "13:30 às 17:30",
+        "duracao_minutos": 240,
+        "duracao_horas": 4.0,
+        "turno": "Ter-vesp"
+      }
+    ],
+    "turnos": [
+      "Ter-vesp"
+    ]
+  },
+  {
+    "codigo": "LET615",
+    "nome": "GEOMETRIA DESCRITIVA-E",
+    "turma": "TP02",
+    "professores": [
+      "HEMECLECIO NASCIMENTO"
+    ],
+    "horarios": [
+      {
+        "dia": "Qui",
+        "horario": "13:30",
+        "horario_fim": "17:30",
+        "horario_completo": "13:30 às 17:30",
+        "duracao_minutos": 240,
+        "duracao_horas": 4.0,
+        "turno": "Qui-vesp"
+      }
+    ],
+    "turnos": [
+      "Qui-vesp"
+    ]
+  },
+  {
+    "codigo": "LET616",
+    "nome": "DESENHO ARQUITETÔNICO I",
+    "turma": "TP01",
+    "professores": [
+      "NILO MÁRCIO DE ANDRADE"
+    ],
+    "horarios": [
+      {
+        "dia": "Seg",
+        "horario": "13:30",
+        "horario_fim": "16:30",
+        "horario_completo": "13:30 às 16:30",
+        "duracao_minutos": 180,
+        "duracao_horas": 3.0,
+        "turno": "Seg-vesp"
+      },
+      {
+        "dia": "Ter",
+        "horario": "13:30",
+        "horario_fim": "15:30",
+        "horario_completo": "13:30 às 15:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Ter-vesp"
+      }
+    ],
+    "turnos": [
+      "Seg-vesp",
+      "Ter-vesp"
+    ]
+  },
+  {
+    "codigo": "LET616",
+    "nome": "DESENHO ARQUITETÔNICO I",
+    "turma": "TP02",
+    "professores": [
+      "NILO MÁRCIO DE ANDRADE"
+    ],
+    "horarios": [
+      {
+        "dia": "Seg",
+        "horario": "16:30",
+        "horario_fim": "18:30",
+        "horario_completo": "16:30 às 18:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Seg-vesp"
+      },
+      {
+        "dia": "Ter",
+        "horario": "15:30",
+        "horario_fim": "18:30",
+        "horario_completo": "15:30 às 18:30",
+        "duracao_minutos": 180,
+        "duracao_horas": 3.0,
+        "turno": "Ter-vesp"
+      }
+    ],
+    "turnos": [
+      "Seg-vesp",
+      "Ter-vesp"
+    ]
+  },
+  {
+    "codigo": "LET617",
+    "nome": "DESENHO TÉCNICO",
+    "turma": "TP01",
+    "professores": [
+      "LILIAN QUELLE SANTOS DE"
+    ],
+    "horarios": [
+      {
+        "dia": "Seg",
+        "horario": "16:30",
+        "horario_fim": "18:30",
+        "horario_completo": "16:30 às 18:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Seg-vesp"
+      },
+      {
+        "dia": "Seg",
+        "horario": "07:30",
+        "horario_fim": "09:30",
+        "horario_completo": "07:30 às 09:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Seg-mat"
+      }
+    ],
+    "turnos": [
+      "Seg-vesp",
+      "Seg-mat"
+    ]
+  },
+  {
+    "codigo": "LET617",
+    "nome": "DESENHO TÉCNICO",
+    "turma": "TP02",
+    "professores": [
+      "LILIAN QUELLE SANTOS DE"
+    ],
+    "horarios": [
+      {
+        "dia": "Qua",
+        "horario": "07:30",
+        "horario_fim": "11:30",
+        "horario_completo": "07:30 às 11:30",
+        "duracao_minutos": 240,
+        "duracao_horas": 4.0,
+        "turno": "Qua-mat"
+      }
+    ],
+    "turnos": [
+      "Qua-mat"
+    ]
+  },
+  {
+    "codigo": "LET808",
+    "nome": "LIBRAS: NOÇÕES BÁSICAS",
+    "turma": "T08",
+    "professores": [
+      "DANIELA BETÂNIA DOS"
+    ],
+    "horarios": [
+      {
+        "dia": "Ter",
+        "horario": "19:00",
+        "horario_fim": "22:00",
+        "horario_completo": "19:00 às 22:00",
+        "duracao_minutos": 180,
+        "duracao_horas": 3.0,
+        "turno": "Ter-not"
+      }
+    ],
+    "turnos": [
+      "Ter-not"
+    ]
+  },
+  {
+    "codigo": "TEC146",
+    "nome": "INTRODUÇÃO À ENGENHARIA",
+    "turma": "TP01",
+    "professores": [
+      "KOJI DE JESUS NAGAHAMA"
+    ],
+    "horarios": [
+      {
+        "dia": "Qua",
+        "horario": "15:30",
+        "horario_fim": "18:30",
+        "horario_completo": "15:30 às 18:30",
+        "duracao_minutos": 180,
+        "duracao_horas": 3.0,
+        "turno": "Qua-vesp"
+      }
+    ],
+    "turnos": [
+      "Qua-vesp"
+    ]
+  },
+  {
+    "codigo": "TEC147",
+    "nome": "TOPOGRAFIA",
+    "turma": "T01P0101",
+    "professores": [
+      "GLEIDSON MARTINS DA"
+    ],
+    "horarios": [
+      {
+        "dia": "Ter",
+        "horario": "07:30",
+        "horario_fim": "09:30",
+        "horario_completo": "07:30 às 09:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Ter-mat"
+      }
+    ],
+    "turnos": [
+      "Ter-mat"
+    ]
+  },
+  {
+    "codigo": "TEC147",
+    "nome": "TOPOGRAFIA",
+    "turma": "T01",
+    "professores": [
+      "GLEIDSON MARTINS DA"
+    ],
+    "horarios": [
+      {
+        "dia": "Qua",
+        "horario": "07:30",
+        "horario_fim": "11:30",
+        "horario_completo": "07:30 às 11:30",
+        "duracao_minutos": 240,
+        "duracao_horas": 4.0,
+        "turno": "Qua-mat"
+      }
+    ],
+    "turnos": [
+      "Qua-mat"
+    ]
+  },
+  {
+    "codigo": "TEC147",
+    "nome": "TOPOGRAFIA",
+    "turma": "T01P0102",
+    "professores": [
+      "GLEIDSON MARTINS DA"
+    ],
+    "horarios": [
+      {
+        "dia": "Ter",
+        "horario": "09:30",
+        "horario_fim": "11:30",
+        "horario_completo": "09:30 às 11:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Ter-mat"
+      }
+    ],
+    "turnos": [
+      "Ter-mat"
+    ]
+  },
+  {
+    "codigo": "TEC147",
+    "nome": "TOPOGRAFIA",
+    "turma": "T01",
+    "professores": [
+      "GLEIDSON MARTINS DA"
+    ],
+    "horarios": [
+      {
+        "dia": "Qua",
+        "horario": "07:30",
+        "horario_fim": "11:30",
+        "horario_completo": "07:30 às 11:30",
+        "duracao_minutos": 240,
+        "duracao_horas": 4.0,
+        "turno": "Qua-mat"
+      }
+    ],
+    "turnos": [
+      "Qua-mat"
+    ]
+  },
+  {
+    "codigo": "TEC148",
+    "nome": "MECÂNICA",
+    "turma": "TP01",
+    "professores": [
+      "TER"
+    ],
+    "horarios": [
+      {
+        "dia": "Ter",
+        "horario": "13:30",
+        "horario_fim": "15:30",
+        "horario_completo": "13:30 às 15:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Ter-vesp"
+      },
+      {
+        "dia": "Qui",
+        "horario": "13:30",
+        "horario_fim": "16:30",
+        "horario_completo": "13:30 às 16:30",
+        "duracao_minutos": 180,
+        "duracao_horas": 3.0,
+        "turno": "Qui-vesp"
+      }
+    ],
+    "turnos": [
+      "Ter-vesp",
+      "Qui-vesp"
+    ]
+  },
+  {
+    "codigo": "TEC149",
+    "nome": "RESISTÊNCIA DOS MATERIAIS I-E",
+    "turma": "TP01",
+    "professores": [
+      "JOSÉ MÁRIO FEITOSA LIMA"
+    ],
+    "horarios": [
+      {
+        "dia": "Seg",
+        "horario": "13:30",
+        "horario_fim": "16:30",
+        "horario_completo": "13:30 às 16:30",
+        "duracao_minutos": 180,
+        "duracao_horas": 3.0,
+        "turno": "Seg-vesp"
+      },
+      {
+        "dia": "Sex",
+        "horario": "13:30",
+        "horario_fim": "15:30",
+        "horario_completo": "13:30 às 15:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Sex-vesp"
+      }
+    ],
+    "turnos": [
+      "Seg-vesp",
+      "Sex-vesp"
+    ]
+  },
+  {
+    "codigo": "TEC150",
+    "nome": "RESISTÊNCIA DOS MATERIAIS II-E",
+    "turma": "TP01",
+    "professores": [
+      "ANDERSON DE SOUZA MATOS"
+    ],
+    "horarios": [
+      {
+        "dia": "Qua",
+        "horario": "13:30",
+        "horario_fim": "15:30",
+        "horario_completo": "13:30 às 15:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Qua-vesp"
+      },
+      {
+        "dia": "Sex",
+        "horario": "13:30",
+        "horario_fim": "15:30",
+        "horario_completo": "13:30 às 15:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Sex-vesp"
+      }
+    ],
+    "turnos": [
+      "Qua-vesp",
+      "Sex-vesp"
+    ]
+  },
+  {
+    "codigo": "TEC151",
+    "nome": "ANÁLISE ESTRUTURAL I",
+    "turma": "TP01",
+    "professores": [
+      "ANTONIO RIBEIRO SANTOS"
+    ],
+    "horarios": [
+      {
+        "dia": "Ter",
+        "horario": "13:30",
+        "horario_fim": "15:30",
+        "horario_completo": "13:30 às 15:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Ter-vesp"
+      },
+      {
+        "dia": "Qui",
+        "horario": "13:30",
+        "horario_fim": "15:30",
+        "horario_completo": "13:30 às 15:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Qui-vesp"
+      }
+    ],
+    "turnos": [
+      "Ter-vesp",
+      "Qui-vesp"
+    ]
+  },
+  {
+    "codigo": "TEC152",
+    "nome": "ANÁLISE ESTRUTURAL II",
+    "turma": "TP01",
+    "professores": [
+      "ANDERSON DE SOUZA MATOS"
+    ],
+    "horarios": [
+      {
+        "dia": "Qua",
+        "horario": "15:30",
+        "horario_fim": "17:30",
+        "horario_completo": "15:30 às 17:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Qua-vesp"
+      },
+      {
+        "dia": "Sex",
+        "horario": "16:30",
+        "horario_fim": "18:30",
+        "horario_completo": "16:30 às 18:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Sex-vesp"
+      }
+    ],
+    "turnos": [
+      "Qua-vesp",
+      "Sex-vesp"
+    ]
+  },
+  {
+    "codigo": "TEC153",
+    "nome": "ESTRUTURAS METÁLICAS I",
+    "turma": "TP01",
+    "professores": [
+      "TAINÁ MASCARENHAS BORGHI"
+    ],
+    "horarios": [
+      {
+        "dia": "Ter",
+        "horario": "16:30",
+        "horario_fim": "18:30",
+        "horario_completo": "16:30 às 18:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Ter-vesp"
+      },
+      {
+        "dia": "Qui",
+        "horario": "15:30",
+        "horario_fim": "18:30",
+        "horario_completo": "15:30 às 18:30",
+        "duracao_minutos": 180,
+        "duracao_horas": 3.0,
+        "turno": "Qui-vesp"
+      }
+    ],
+    "turnos": [
+      "Ter-vesp",
+      "Qui-vesp"
+    ]
+  },
+  {
+    "codigo": "TEC154",
+    "nome": "ESTRUTURA DE MADEIRA",
+    "turma": "TP01",
+    "professores": [
+      "TAINÁ MASCARENHAS BORGHI"
+    ],
+    "horarios": [
+      {
+        "dia": "Ter",
+        "horario": "13:30",
+        "horario_fim": "15:30",
+        "horario_completo": "13:30 às 15:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Ter-vesp"
+      },
+      {
+        "dia": "Qui",
+        "horario": "13:30",
+        "horario_fim": "15:30",
+        "horario_completo": "13:30 às 15:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Qui-vesp"
+      }
+    ],
+    "turnos": [
+      "Ter-vesp",
+      "Qui-vesp"
+    ]
+  },
+  {
+    "codigo": "TEC155",
+    "nome": "ESTRUTURAS DE CONCRETO I",
+    "turma": "TP01",
+    "professores": [
+      "MÉRCURIE JANEAI MATEUS"
+    ],
+    "horarios": [
+      {
+        "dia": "Seg",
+        "horario": "13:30",
+        "horario_fim": "16:30",
+        "horario_completo": "13:30 às 16:30",
+        "duracao_minutos": 180,
+        "duracao_horas": 3.0,
+        "turno": "Seg-vesp"
+      },
+      {
+        "dia": "Sex",
+        "horario": "13:30",
+        "horario_fim": "15:30",
+        "horario_completo": "13:30 às 15:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Sex-vesp"
+      }
+    ],
+    "turnos": [
+      "Seg-vesp",
+      "Sex-vesp"
+    ]
+  },
+  {
+    "codigo": "TEC156",
+    "nome": "MATERIAIS DE CONSTRUÇÃO I-E",
+    "turma": "TP01",
+    "professores": [
+      "CINTIA MARIA ARIANI FONTES"
+    ],
+    "horarios": [
+      {
+        "dia": "Qua",
+        "horario": "09:30",
+        "horario_fim": "12:30",
+        "horario_completo": "09:30 às 12:30",
+        "duracao_minutos": 180,
+        "duracao_horas": 3.0,
+        "turno": "Qua-mat"
+      },
+      {
+        "dia": "Sex",
+        "horario": "10:30",
+        "horario_fim": "12:30",
+        "horario_completo": "10:30 às 12:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Sex-mat"
+      }
+    ],
+    "turnos": [
+      "Qua-mat",
+      "Sex-mat"
+    ]
+  },
+  {
+    "codigo": "TEC157",
+    "nome": "MATERIAIS DE CONSTRUÇÃO II-E",
+    "turma": "T01P0101",
+    "professores": [
+      "MÔNICA BATISTA LEITE"
+    ],
+    "horarios": [
+      {
+        "dia": "Seg",
+        "horario": "16:30",
+        "horario_fim": "18:30",
+        "horario_completo": "16:30 às 18:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Seg-vesp"
+      }
+    ],
+    "turnos": [
+      "Seg-vesp"
+    ]
+  },
+  {
+    "codigo": "TEC157",
+    "nome": "MATERIAIS DE CONSTRUÇÃO II-E",
+    "turma": "T01",
+    "professores": [
+      "SILAS DE ANDRADE PINTO"
+    ],
+    "horarios": [
+      {
+        "dia": "Qua",
+        "horario": "13:30",
+        "horario_fim": "16:30",
+        "horario_completo": "13:30 às 16:30",
+        "duracao_minutos": 180,
+        "duracao_horas": 3.0,
+        "turno": "Qua-vesp"
+      }
+    ],
+    "turnos": [
+      "Qua-vesp"
+    ]
+  },
+  {
+    "codigo": "TEC157",
+    "nome": "MATERIAIS DE CONSTRUÇÃO II-E",
+    "turma": "T01P0102",
+    "professores": [
+      "SILAS DE ANDRADE PINTO"
+    ],
+    "horarios": [
+      {
+        "dia": "Ter",
+        "horario": "16:30",
+        "horario_fim": "18:30",
+        "horario_completo": "16:30 às 18:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Ter-vesp"
+      }
+    ],
+    "turnos": [
+      "Ter-vesp"
+    ]
+  },
+  {
+    "codigo": "TEC157",
+    "nome": "MATERIAIS DE CONSTRUÇÃO II-E",
+    "turma": "T01",
+    "professores": [
+      "SILAS DE ANDRADE PINTO"
+    ],
+    "horarios": [
+      {
+        "dia": "Qua",
+        "horario": "13:30",
+        "horario_fim": "16:30",
+        "horario_completo": "13:30 às 16:30",
+        "duracao_minutos": 180,
+        "duracao_horas": 3.0,
+        "turno": "Qua-vesp"
+      }
+    ],
+    "turnos": [
+      "Qua-vesp"
+    ]
+  },
+  {
+    "codigo": "TEC157",
+    "nome": "MATERIAIS DE CONSTRUÇÃO II-E",
+    "turma": "T01P0103",
+    "professores": [
+      "MÔNICA BATISTA LEITE"
+    ],
+    "horarios": [
+      {
+        "dia": "Qua",
+        "horario": "16:30",
+        "horario_fim": "18:30",
+        "horario_completo": "16:30 às 18:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Qua-vesp"
+      }
+    ],
+    "turnos": [
+      "Qua-vesp"
+    ]
+  },
+  {
+    "codigo": "TEC157",
+    "nome": "MATERIAIS DE CONSTRUÇÃO II-E",
+    "turma": "T01",
+    "professores": [
+      "SILAS DE ANDRADE PINTO"
+    ],
+    "horarios": [
+      {
+        "dia": "Qua",
+        "horario": "13:30",
+        "horario_fim": "16:30",
+        "horario_completo": "13:30 às 16:30",
+        "duracao_minutos": 180,
+        "duracao_horas": 3.0,
+        "turno": "Qua-vesp"
+      }
+    ],
+    "turnos": [
+      "Qua-vesp"
+    ]
+  },
+  {
+    "codigo": "TEC158",
+    "nome": "INST. ELÉTRICAS PREDIAIS",
+    "turma": "TP01",
+    "professores": [
+      "SUÂNIA FABIELE MOITINHO"
+    ],
+    "horarios": [
+      {
+        "dia": "Ter",
+        "horario": "16:30",
+        "horario_fim": "18:30",
+        "horario_completo": "16:30 às 18:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Ter-vesp"
+      },
+      {
+        "dia": "Qui",
+        "horario": "07:30",
+        "horario_fim": "10:30",
+        "horario_completo": "07:30 às 10:30",
+        "duracao_minutos": 180,
+        "duracao_horas": 3.0,
+        "turno": "Qui-mat"
+      }
+    ],
+    "turnos": [
+      "Ter-vesp",
+      "Qui-mat"
+    ]
+  },
+  {
+    "codigo": "TEC159",
+    "nome": "TECNOLOGIAS DAS CONTRUÇÕES I",
+    "turma": "TP01",
+    "professores": [
+      "SUÂNIA FABIELE MOITINHO"
+    ],
+    "horarios": [
+      {
+        "dia": "Seg",
+        "horario": "15:30",
+        "horario_fim": "18:30",
+        "horario_completo": "15:30 às 18:30",
+        "duracao_minutos": 180,
+        "duracao_horas": 3.0,
+        "turno": "Seg-vesp"
+      },
+      {
+        "dia": "Qui",
+        "horario": "13:30",
+        "horario_fim": "15:30",
+        "horario_completo": "13:30 às 15:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Qui-vesp"
+      }
+    ],
+    "turnos": [
+      "Seg-vesp",
+      "Qui-vesp"
+    ]
+  },
+  {
+    "codigo": "TEC160",
+    "nome": "TECNOLOGIA DAS CONSTRUÇÕES II",
+    "turma": "TP01",
+    "professores": [
+      "SEG"
+    ],
+    "horarios": [
+      {
+        "dia": "Seg",
+        "horario": "16:30",
+        "horario_fim": "18:30",
+        "horario_completo": "16:30 às 18:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Seg-vesp"
+      },
+      {
+        "dia": "Qua",
+        "horario": "16:30",
+        "horario_fim": "18:30",
+        "horario_completo": "16:30 às 18:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Qua-vesp"
+      }
+    ],
+    "turnos": [
+      "Seg-vesp",
+      "Qua-vesp"
+    ]
+  },
+  {
+    "codigo": "TEC161",
+    "nome": "MECÂNICA DOS FLUIDOS",
+    "turma": "TP01",
+    "professores": [
+      "RISEUDA PEREIRA DE SOUSA"
+    ],
+    "horarios": [
+      {
+        "dia": "Ter",
+        "horario": "13:30",
+        "horario_fim": "16:30",
+        "horario_completo": "13:30 às 16:30",
+        "duracao_minutos": 180,
+        "duracao_horas": 3.0,
+        "turno": "Ter-vesp"
+      },
+      {
+        "dia": "Qui",
+        "horario": "13:30",
+        "horario_fim": "16:30",
+        "horario_completo": "13:30 às 16:30",
+        "duracao_minutos": 180,
+        "duracao_horas": 3.0,
+        "turno": "Qui-vesp"
+      }
+    ],
+    "turnos": [
+      "Ter-vesp",
+      "Qui-vesp"
+    ]
+  },
+  {
+    "codigo": "TEC161",
+    "nome": "MECÂNICA DOS FLUIDOS",
+    "turma": "TP02",
+    "professores": [
+      "RISEUDA PEREIRA DE SOUSA"
+    ],
+    "horarios": [
+      {
+        "dia": "Ter",
+        "horario": "09:30",
+        "horario_fim": "12:30",
+        "horario_completo": "09:30 às 12:30",
+        "duracao_minutos": 180,
+        "duracao_horas": 3.0,
+        "turno": "Ter-mat"
+      },
+      {
+        "dia": "Qui",
+        "horario": "09:30",
+        "horario_fim": "12:30",
+        "horario_completo": "09:30 às 12:30",
+        "duracao_minutos": 180,
+        "duracao_horas": 3.0,
+        "turno": "Qui-mat"
+      }
+    ],
+    "turnos": [
+      "Ter-mat",
+      "Qui-mat"
+    ]
+  },
+  {
+    "codigo": "TEC162",
+    "nome": "HIDRÁULICA",
+    "turma": "TP01",
+    "professores": [
+      "DIÓGENES OLIVEIRA SENNA"
+    ],
+    "horarios": [
+      {
+        "dia": "Seg",
+        "horario": "16:30",
+        "horario_fim": "18:30",
+        "horario_completo": "16:30 às 18:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Seg-vesp"
+      },
+      {
+        "dia": "Qua",
+        "horario": "15:30",
+        "horario_fim": "18:30",
+        "horario_completo": "15:30 às 18:30",
+        "duracao_minutos": 180,
+        "duracao_horas": 3.0,
+        "turno": "Qua-vesp"
+      }
+    ],
+    "turnos": [
+      "Seg-vesp",
+      "Qua-vesp"
+    ]
+  },
+  {
+    "codigo": "TEC163",
+    "nome": "HIDROLOGIA APLICADA",
+    "turma": "TP01",
+    "professores": [
+      "TIAGO LIBERALESSO"
+    ],
+    "horarios": [
+      {
+        "dia": "Qua",
+        "horario": "13:30",
+        "horario_fim": "15:30",
+        "horario_completo": "13:30 às 15:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Qua-vesp"
+      },
+      {
+        "dia": "Sex",
+        "horario": "13:30",
+        "horario_fim": "16:30",
+        "horario_completo": "13:30 às 16:30",
+        "duracao_minutos": 180,
+        "duracao_horas": 3.0,
+        "turno": "Sex-vesp"
+      }
+    ],
+    "turnos": [
+      "Qua-vesp",
+      "Sex-vesp"
+    ]
+  },
+  {
+    "codigo": "TEC164",
+    "nome": "SANEAMENTO I",
+    "turma": "TP01",
+    "professores": [
+      "EDUARDO HENRIQUE BORGES"
+    ],
+    "horarios": [
+      {
+        "dia": "Ter",
+        "horario": "15:30",
+        "horario_fim": "17:30",
+        "horario_completo": "15:30 às 17:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Ter-vesp"
+      },
+      {
+        "dia": "Qui",
+        "horario": "15:30",
+        "horario_fim": "17:30",
+        "horario_completo": "15:30 às 17:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Qui-vesp"
+      }
+    ],
+    "turnos": [
+      "Ter-vesp",
+      "Qui-vesp"
+    ]
+  },
+  {
+    "codigo": "TEC165",
+    "nome": "SANEAMENTO II",
+    "turma": "TP01",
+    "professores": [
+      "TIAGO ASSUNÇÃO SANTOS"
+    ],
+    "horarios": [
+      {
+        "dia": "Qua",
+        "horario": "13:30",
+        "horario_fim": "15:30",
+        "horario_completo": "13:30 às 15:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Qua-vesp"
+      },
+      {
+        "dia": "Sex",
+        "horario": "15:30",
+        "horario_fim": "17:30",
+        "horario_completo": "15:30 às 17:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Sex-vesp"
+      }
+    ],
+    "turnos": [
+      "Qua-vesp",
+      "Sex-vesp"
+    ]
+  },
+  {
+    "codigo": "TEC166",
+    "nome": "INST. HID. E SANIT. PREDIAIS",
+    "turma": "TP01",
+    "professores": [
+      "DIÓGENES OLIVEIRA SENNA"
+    ],
+    "horarios": [
+      {
+        "dia": "Seg",
+        "horario": "13:30",
+        "horario_fim": "15:30",
+        "horario_completo": "13:30 às 15:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Seg-vesp"
+      },
+      {
+        "dia": "Ter",
+        "horario": "13:30",
+        "horario_fim": "15:30",
+        "horario_completo": "13:30 às 15:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Ter-vesp"
+      }
+    ],
+    "turnos": [
+      "Seg-vesp",
+      "Ter-vesp"
+    ]
+  },
+  {
+    "codigo": "TEC167",
+    "nome": "CIÊNCIAS DO AMBIENTE",
+    "turma": "TP01",
+    "professores": [
+      "ZANNA MARIA RODRIGUES DE"
+    ],
+    "horarios": [
+      {
+        "dia": "Qua",
+        "horario": "09:30",
+        "horario_fim": "12:30",
+        "horario_completo": "09:30 às 12:30",
+        "duracao_minutos": 180,
+        "duracao_horas": 3.0,
+        "turno": "Qua-mat"
+      }
+    ],
+    "turnos": [
+      "Qua-mat"
+    ]
+  },
+  {
+    "codigo": "TEC168",
+    "nome": "ESTRADAS I-E",
+    "turma": "TP01",
+    "professores": [
+      "IGOR VIEIRA SANTOS"
+    ],
+    "horarios": [
+      {
+        "dia": "Ter",
+        "horario": "13:30",
+        "horario_fim": "16:30",
+        "horario_completo": "13:30 às 16:30",
+        "duracao_minutos": 180,
+        "duracao_horas": 3.0,
+        "turno": "Ter-vesp"
+      },
+      {
+        "dia": "Qui",
+        "horario": "13:30",
+        "horario_fim": "15:30",
+        "horario_completo": "13:30 às 15:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Qui-vesp"
+      }
+    ],
+    "turnos": [
+      "Ter-vesp",
+      "Qui-vesp"
+    ]
+  },
+  {
+    "codigo": "TEC168",
+    "nome": "ESTRADAS I-E",
+    "turma": "TP02",
+    "professores": [
+      "IGOR VIEIRA SANTOS"
+    ],
+    "horarios": [
+      {
+        "dia": "Ter",
+        "horario": "09:30",
+        "horario_fim": "12:30",
+        "horario_completo": "09:30 às 12:30",
+        "duracao_minutos": 180,
+        "duracao_horas": 3.0,
+        "turno": "Ter-mat"
+      },
+      {
+        "dia": "Qui",
+        "horario": "10:30",
+        "horario_fim": "12:30",
+        "horario_completo": "10:30 às 12:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Qui-mat"
+      }
+    ],
+    "turnos": [
+      "Ter-mat",
+      "Qui-mat"
+    ]
+  },
+  {
+    "codigo": "TEC169",
+    "nome": "ESTRADAS II-E",
+    "turma": "TP01",
+    "professores": [
+      "QUA"
+    ],
+    "horarios": [
+      {
+        "dia": "Qua",
+        "horario": "10:30",
+        "horario_fim": "12:30",
+        "horario_completo": "10:30 às 12:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Qua-mat"
+      },
+      {
+        "dia": "Qua",
+        "horario": "07:30",
+        "horario_fim": "10:30",
+        "horario_completo": "07:30 às 10:30",
+        "duracao_minutos": 180,
+        "duracao_horas": 3.0,
+        "turno": "Qua-mat"
+      }
+    ],
+    "turnos": [
+      "Qua-mat"
+    ]
+  },
+  {
+    "codigo": "TEC170",
+    "nome": "MECÂNICA DOS SOLOS",
+    "turma": "T01P0101",
+    "professores": [
+      "TER"
+    ],
+    "horarios": [
+      {
+        "dia": "Ter",
+        "horario": "07:30",
+        "horario_fim": "09:30",
+        "horario_completo": "07:30 às 09:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Ter-mat"
+      }
+    ],
+    "turnos": [
+      "Ter-mat"
+    ]
+  },
+  {
+    "codigo": "TEC170",
+    "nome": "MECÂNICA DOS SOLOS",
+    "turma": "T01",
+    "professores": [
+      "SEG"
+    ],
+    "horarios": [
+      {
+        "dia": "Seg",
+        "horario": "13:30",
+        "horario_fim": "16:30",
+        "horario_completo": "13:30 às 16:30",
+        "duracao_minutos": 180,
+        "duracao_horas": 3.0,
+        "turno": "Seg-vesp"
+      }
+    ],
+    "turnos": [
+      "Seg-vesp"
+    ]
+  },
+  {
+    "codigo": "TEC170",
+    "nome": "MECÂNICA DOS SOLOS",
+    "turma": "T01P0102",
+    "professores": [
+      "TER"
+    ],
+    "horarios": [
+      {
+        "dia": "Ter",
+        "horario": "09:30",
+        "horario_fim": "11:30",
+        "horario_completo": "09:30 às 11:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Ter-mat"
+      }
+    ],
+    "turnos": [
+      "Ter-mat"
+    ]
+  },
+  {
+    "codigo": "TEC170",
+    "nome": "MECÂNICA DOS SOLOS",
+    "turma": "T01",
+    "professores": [
+      "SEG"
+    ],
+    "horarios": [
+      {
+        "dia": "Seg",
+        "horario": "13:30",
+        "horario_fim": "16:30",
+        "horario_completo": "13:30 às 16:30",
+        "duracao_minutos": 180,
+        "duracao_horas": 3.0,
+        "turno": "Seg-vesp"
+      }
+    ],
+    "turnos": [
+      "Seg-vesp"
+    ]
+  },
+  {
+    "codigo": "TEC171",
+    "nome": "FUNDAÇÕES E OBRAS DE TERRA",
+    "turma": "TP01",
+    "professores": [
+      "MARIA DO SOCORRO COSTA"
+    ],
+    "horarios": [
+      {
+        "dia": "Ter",
+        "horario": "13:30",
+        "horario_fim": "16:30",
+        "horario_completo": "13:30 às 16:30",
+        "duracao_minutos": 180,
+        "duracao_horas": 3.0,
+        "turno": "Ter-vesp"
+      },
+      {
+        "dia": "Sex",
+        "horario": "10:30",
+        "horario_fim": "12:30",
+        "horario_completo": "10:30 às 12:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Sex-mat"
+      }
+    ],
+    "turnos": [
+      "Ter-vesp",
+      "Sex-mat"
+    ]
+  },
+  {
+    "codigo": "TEC172",
+    "nome": "PROJETO DE ENGENHARIA",
+    "turma": "TP01",
+    "professores": [
+      "PAULO ROBERTO LOPES LIMA"
+    ],
+    "horarios": [
+      {
+        "dia": "Sex",
+        "horario": "15:30",
+        "horario_fim": "18:30",
+        "horario_completo": "15:30 às 18:30",
+        "duracao_minutos": 180,
+        "duracao_horas": 3.0,
+        "turno": "Sex-vesp"
+      }
+    ],
+    "turnos": [
+      "Sex-vesp"
+    ]
+  },
+  {
+    "codigo": "TEC172",
+    "nome": "PROJETO DE ENGENHARIA",
+    "turma": "TP02",
+    "professores": [
+      "TEREZA SIMONNE"
+    ],
+    "horarios": [
+      {
+        "dia": "Qua",
+        "horario": "09:30",
+        "horario_fim": "12:30",
+        "horario_completo": "09:30 às 12:30",
+        "duracao_minutos": 180,
+        "duracao_horas": 3.0,
+        "turno": "Qua-mat"
+      }
+    ],
+    "turnos": [
+      "Qua-mat"
+    ]
+  },
+  {
+    "codigo": "TEC175",
+    "nome": "PLANEJ. CONTR. E GERENC. DE OBRAS",
+    "turma": "TP01",
+    "professores": [
+      "TER"
+    ],
+    "horarios": [
+      {
+        "dia": "Ter",
+        "horario": "10:30",
+        "horario_fim": "12:30",
+        "horario_completo": "10:30 às 12:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Ter-mat"
+      },
+      {
+        "dia": "Qui",
+        "horario": "10:30",
+        "horario_fim": "12:30",
+        "horario_completo": "10:30 às 12:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Qui-mat"
+      }
+    ],
+    "turnos": [
+      "Ter-mat",
+      "Qui-mat"
+    ]
+  },
+  {
+    "codigo": "TEC176",
+    "nome": "ESTÁGIO SUPERVISIONADO",
+    "turma": "E01",
+    "professores": [
+      "SUÂNIA FABIELE MOITINHO"
+    ],
+    "horarios": [
+      {
+        "dia": "Seg",
+        "horario": "13:30",
+        "horario_fim": "15:30",
+        "horario_completo": "13:30 às 15:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Seg-vesp"
+      }
+    ],
+    "turnos": [
+      "Seg-vesp"
+    ]
+  },
+  {
+    "codigo": "TEC179",
+    "nome": "ESTRUTURAS DE CONCRETO II",
+    "turma": "TP01",
+    "professores": [
+      "ANTONIO RIBEIRO SANTOS"
+    ],
+    "horarios": [
+      {
+        "dia": "Seg",
+        "horario": "16:30",
+        "horario_fim": "18:30",
+        "horario_completo": "16:30 às 18:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Seg-vesp"
+      },
+      {
+        "dia": "Qua",
+        "horario": "16:30",
+        "horario_fim": "18:30",
+        "horario_completo": "16:30 às 18:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Qua-vesp"
+      }
+    ],
+    "turnos": [
+      "Seg-vesp",
+      "Qua-vesp"
+    ]
+  },
+  {
+    "codigo": "TEC192",
+    "nome": "PAT. E TERAP. DAS CONSTRUÇÕES-E",
+    "turma": "TP01",
+    "professores": [
+      "SILAS DE ANDRADE PINTO"
+    ],
+    "horarios": [
+      {
+        "dia": "Ter",
+        "horario": "07:30",
+        "horario_fim": "09:30",
+        "horario_completo": "07:30 às 09:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Ter-mat"
+      },
+      {
+        "dia": "Qua",
+        "horario": "07:30",
+        "horario_fim": "09:30",
+        "horario_completo": "07:30 às 09:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Qua-mat"
+      }
+    ],
+    "turnos": [
+      "Ter-mat",
+      "Qua-mat"
+    ]
+  },
+  {
+    "codigo": "TEC194",
+    "nome": "TEC. AVANÇADA DO CONCRETO",
+    "turma": "TP01",
+    "professores": [
+      "HENRIQUE ALMEIDA SANTANA"
+    ],
+    "horarios": [
+      {
+        "dia": "Seg",
+        "horario": "15:30",
+        "horario_fim": "17:30",
+        "horario_completo": "15:30 às 17:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Seg-vesp"
+      },
+      {
+        "dia": "Qua",
+        "horario": "09:30",
+        "horario_fim": "11:30",
+        "horario_completo": "09:30 às 11:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Qua-mat"
+      }
+    ],
+    "turnos": [
+      "Seg-vesp",
+      "Qua-mat"
+    ]
+  },
+  {
+    "codigo": "TEC200",
+    "nome": "SIST. DE DREN. URBANA",
+    "turma": "TP01",
+    "professores": [
+      "EDUARDO HENRIQUE BORGES"
+    ],
+    "horarios": [
+      {
+        "dia": "Ter",
+        "horario": "13:30",
+        "horario_fim": "15:30",
+        "horario_completo": "13:30 às 15:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Ter-vesp"
+      },
+      {
+        "dia": "Qui",
+        "horario": "13:30",
+        "horario_fim": "15:30",
+        "horario_completo": "13:30 às 15:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Qui-vesp"
+      }
+    ],
+    "turnos": [
+      "Ter-vesp",
+      "Qui-vesp"
+    ]
+  },
+  {
+    "codigo": "TEC225",
+    "nome": "MÉTODOS NUMÉRICOS I",
+    "turma": "TP01",
+    "professores": [
+      "GERALDO JOSÉ BELMONTE"
+    ],
+    "horarios": [
+      {
+        "dia": "Qui",
+        "horario": "15:30",
+        "horario_fim": "17:30",
+        "horario_completo": "15:30 às 17:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Qui-vesp"
+      },
+      {
+        "dia": "Sex",
+        "horario": "13:30",
+        "horario_fim": "15:30",
+        "horario_completo": "13:30 às 15:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Sex-vesp"
+      }
+    ],
+    "turnos": [
+      "Qui-vesp",
+      "Sex-vesp"
+    ]
+  },
+  {
+    "codigo": "TEC472",
+    "nome": "CARTOGRAFIA DIGITAL",
+    "turma": "TP02",
+    "professores": [
+      "ROSÂNGELA LEAL SANTOS"
+    ],
+    "horarios": [
+      {
+        "dia": "Seg",
+        "horario": "18:30",
+        "horario_fim": "20:30",
+        "horario_completo": "18:30 às 20:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Seg-not"
+      },
+      {
+        "dia": "Qua",
+        "horario": "18:30",
+        "horario_fim": "20:30",
+        "horario_completo": "18:30 às 20:30",
+        "duracao_minutos": 120,
+        "duracao_horas": 2.0,
+        "turno": "Qua-not"
+      }
+    ],
+    "turnos": [
+      "Seg-not",
+      "Qua-not"
+    ]
+  }
+]

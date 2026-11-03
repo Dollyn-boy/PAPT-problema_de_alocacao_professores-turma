@@ -1,0 +1,44 @@
+{
+  "id": "reduzida_base",
+  "descricao": "Instancia reduzida transcrita do documento modelagem_gapuefs.pdf.",
+  "turnos_semanais": [
+    "Seg-mat", "Seg-vesp", "Ter-mat", "Ter-vesp", "Qua-mat", "Qua-vesp", "Qui-mat", "Qui-vesp", "Sex-mat", "Sex-vesp"
+  ],
+  "professores": [
+    {"id": "P1", "nome": "Ana Lúcia", "carga_min": 4, "carga_max": 8, "afastado": false},
+    {"id": "P2", "nome": "Pamela", "carga_min": 4, "carga_max": 8, "afastado": false},
+    {"id": "P3", "nome": "Elinaldo", "carga_min": 4, "carga_max": 8, "afastado": false}
+  ],
+  "turmas": [
+    {"id": "EXA806-T01", "disciplina": "EXA806", "horas": 4, "slots": [
+      {"dia": "Seg", "horario": "17:30", "turno": "Seg-vesp"},
+      {"dia": "Qua", "horario": "17:30", "turno": "Qua-vesp"}
+    ]},
+    {"id": "EXA806-T02", "disciplina": "EXA806", "horas": 4, "slots": [
+      {"dia": "Ter", "horario": "09:30", "turno": "Ter-mat"},
+      {"dia": "Qui", "horario": "09:30", "turno": "Qui-mat"}
+    ]},
+    {"id": "TEC217-TP01", "disciplina": "TEC217", "horas": 4, "slots": [
+      {"dia": "Seg", "horario": "13:30", "turno": "Seg-vesp"},
+      {"dia": "Qua", "horario": "13:30", "turno": "Qua-vesp"}
+    ]},
+    {"id": "TEC217-TP02", "disciplina": "TEC217", "horas": 4, "slots": [
+      {"dia": "Ter", "horario": "15:30", "turno": "Ter-vesp"},
+      {"dia": "Qui", "horario": "15:30", "turno": "Qui-vesp"}
+    ]}
+  ],
+  "pares_professor_turma": [
+    {"professor": "P1", "turma": "EXA806-T01", "qualificado": true, "disponivel": true, "preferencia": 4},
+    {"professor": "P1", "turma": "EXA806-T02", "qualificado": true, "disponivel": true, "preferencia": 5},
+    {"professor": "P1", "turma": "TEC217-TP01", "qualificado": false, "disponivel": true, "preferencia": 0},
+    {"professor": "P1", "turma": "TEC217-TP02", "qualificado": false, "disponivel": true, "preferencia": 0},
+    {"professor": "P2", "turma": "EXA806-T01", "qualificado": true, "disponivel": false, "preferencia": 0},
+    {"professor": "P2", "turma": "EXA806-T02", "qualificado": true, "disponivel": true, "preferencia": 4},
+    {"professor": "P2", "turma": "TEC217-TP01", "qualificado": true, "disponivel": false, "preferencia": 0},
+    {"professor": "P2", "turma": "TEC217-TP02", "qualificado": true, "disponivel": true, "preferencia": 3},
+    {"professor": "P3", "turma": "EXA806-T01", "qualificado": false, "disponivel": true, "preferencia": 0},
+    {"professor": "P3", "turma": "EXA806-T02", "qualificado": false, "disponivel": true, "preferencia": 0},
+    {"professor": "P3", "turma": "TEC217-TP01", "qualificado": true, "disponivel": true, "preferencia": 5},
+    {"professor": "P3", "turma": "TEC217-TP02", "qualificado": true, "disponivel": true, "preferencia": 1}
+  ]
+}

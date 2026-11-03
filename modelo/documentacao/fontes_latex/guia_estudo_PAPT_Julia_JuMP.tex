@@ -1,0 +1,245 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[brazilian]{babel}
+\usepackage{amsmath,amssymb,booktabs,geometry,enumitem,listings,hyperref}
+\geometry{margin=2.5cm}
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue}
+\setlist{itemsep=3pt,topsep=4pt}
+\lstset{basicstyle=\ttfamily\small,breaklines=true,columns=fullflexible,keepspaces=true,frame=single,showstringspaces=false}
+\title{Guia de Estudo: Implementação do PAPT em Julia com JuMP e CPLEX}
+\author{}
+\date{}
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Objetivo deste guia}
+Este material explica como partir da formulação matemática do Problema de Alocação de Professores a Turmas (PAPT) e construir uma implementação em Julia com JuMP e CPLEX. O código enviado pela orientadora serve como referência de organização, mas aparenta ser um trecho de um projeto maior, com conjuntos e parâmetros definidos fora do arquivo apresentado. A proposta é aproveitar a estrutura geral sem copiar diretamente as variáveis específicas daquele problema.
+
+\section{Visão geral do código da orientadora}
+O programa pode ser compreendido em etapas:
+\begin{enumerate}
+\item importar bibliotecas;
+\item ler e organizar os dados da instância;
+\item definir a função objetivo;
+\item criar o modelo e as variáveis;
+\item configurar o solver;
+\item adicionar as restrições;
+\item resolver o modelo;
+\item extrair e registrar a solução.
+\end{enumerate}
+
+\section{Bibliotecas e parâmetros gerais}
+O código começa com:
+\begin{lstlisting}[language=Julia]
+using JuMP, CPLEX, DataStructures, DelimitedFiles,
+      Statistics, MathOptInterface, Combinatorics
+\end{lstlisting}
+\begin{center}
+\begin{tabular}{p{0.30\textwidth}p{0.60\textwidth}}
+\toprule
+\textbf{Biblioteca} & \textbf{Função}\\
+\midrule
+\texttt{JuMP} & Escrever modelos matemáticos de otimização em Julia.\\
+\texttt{CPLEX} & Interface para utilizar o solver IBM CPLEX.\\
+\texttt{DelimitedFiles} & Ler arquivos de texto delimitados.\\
+\texttt{MathOptInterface} & Interface padronizada entre JuMP e solvers.\\
+\texttt{DataStructures}, \texttt{Statistics}, \texttt{Combinatorics} & Estruturas e operações auxiliares usadas em outras partes do projeto.\\
+\bottomrule
+\end{tabular}
+\end{center}
+O código também define:
+\begin{lstlisting}[language=Julia]
+const ZERO = 0.0001
+const NTHREADS = 8
+\end{lstlisting}
+No trecho enviado, \texttt{ZERO} é usado como tolerância de gap relativo do CPLEX e \texttt{NTHREADS} define o número de threads. O gap é um critério de parada para o problema inteiro misto; não representa uma tolerância geral aplicada a todas as variáveis e restrições.
+Para o primeiro protótipo do PAPT, comece com uma configuração simples e só depois experimente parâmetros avançados do solver. Assim, erros de formulação podem ser separados dos efeitos de configuração.
+
+\section{Leitura e preparação dos dados}
+O exemplo usa:
+\begin{lstlisting}[language=Julia]
+instance = ARGS[1]
+const ninstance = parse(Int, instance)
+
+filepath = "/home/pcandida/punim0040/instances/coordenadasSP.txt"
+populationDP = readdlm(string(filepath, instance, "DP.txt"))
+\end{lstlisting}
+\texttt{ARGS[1]} recebe o primeiro argumento passado ao executar o script. Isso permite selecionar uma instância sem alterar o código. O caminho absoluto, porém, depende do computador da orientadora.
+No PAPT, organize:
+\begin{itemize}
+\item $P$: professores;
+\item $T$: turmas;
+\item $K$: disciplinas;
+\item $S$: slots semanais fixos;
+\item $R$: combinações de dia e turno;
+\item $h_j$: carga horária semanal da turma $j$;
+\item $w_{ij}$: preferência do professor $i$ pela turma $j$;
+\item $e_{ij}$: elegibilidade do professor $i$ para a turma $j$.
+\end{itemize}
+Separe dados institucionais observados dos parâmetros gerados para os experimentos. O professor registrado na oferta original é uma referência da alocação atual, não necessariamente a lista de todos os professores elegíveis para a turma.
+
+\section{Função objetivo}
+No código da orientadora, a função objetivo é encapsulada em:
+\begin{lstlisting}[language=Julia]
+function setObjective(m)
+    # ...
+    @objective(m, Min, ...)
+end
+\end{lstlisting}
+A macro \texttt{@objective} define o sentido da otimização e a expressão a otimizar. O exemplo minimiza penalidades e custos. Para o PAPT, a versão não lexicográfica e sem normalização discutida anteriormente utiliza:
+\begin{equation}
+\max Z =
+0{,}60F(x)+0{,}20\underline{s}
+-0{,}10C(z)-0{,}10\overline{g}.
+\end{equation}
+Os critérios são:
+\begin{align}
+F(x) &= \sum_{i\in P}\sum_{j\in T} w_{ij}x_{ij},\\
+C(z) &= \sum_{i\in P}\sum_{r\in R}z_{ir}.
+\end{align}
+Em JuMP:
+\begin{lstlisting}[language=Julia]
+@expression(model, F,
+    sum(w[(i,j)] * x[i,j] for i in P for j in T)
+)
+@expression(model, C,
+    sum(z[i,r] for i in P for r in R)
+)
+@objective(model, Max,
+    0.60 * F +
+    0.20 * s -
+    0.10 * C -
+    0.10 * g_max
+)
+\end{lstlisting}
+Definir os critérios como expressões separadas facilita registrar seus valores individualmente. Como não há normalização, os pesos precisam ser avaliados, pois os critérios podem ter escalas diferentes.
+
+\section{Variáveis de decisão}
+No código recebido, as variáveis são criadas com \texttt{@variable}. A palavra \texttt{Bin} indica uma variável binária e \texttt{>= 0} define um limite inferior.
+Para o PAPT:
+\begin{lstlisting}[language=Julia]
+@variable(model, x[i in P, j in T], Bin)
+@variable(model, z[i in P, r in R], Bin)
+@variable(model, g[i in P, k in K], Bin)
+@variable(model, s >= 0)
+@variable(model, g_max >= 0, Int)
+\end{lstlisting}
+\begin{center}
+\begin{tabular}{p{0.20\textwidth}p{0.72\textwidth}}
+\toprule
+\textbf{Variável} & \textbf{Significado}\\
+\midrule
+$x_{ij}$ & Vale 1 se o professor $i$ for alocado à turma $j$; caso contrário, 0.\\
+$z_{ir}$ & Vale 1 se o professor $i$ tiver aula em pelo menos uma turma no turno semanal $r$.\\
+$g_{ik}$ & Vale 1 se o professor $i$ lecionar ao menos uma turma da disciplina $k$.\\
+$\underline{s}$ & Piso da satisfação dos professores incluídos no critério de equidade.\\
+$\overline{g}$ & Maior número de disciplinas distintas atribuído a um professor.\\
+\bottomrule
+\end{tabular}
+\end{center}
+Os nomes \texttt{s} e \texttt{g\_max} são nomes de implementação e representam $\underline{s}$ e $\overline{g}$.
+
+\section{Configuração do solver}
+O código recebido configura o CPLEX com:
+\begin{lstlisting}[language=Julia]
+set_optimizer_attribute(m, "CPX_PARAM_THREADS", NTHREADS)
+set_optimizer_attribute(m, "CPX_PARAM_EPGAP", ZERO)
+set_optimizer_attribute(m, "CPX_PARAM_TILIM", 3600)
+\end{lstlisting}
+Esses parâmetros controlam threads, gap relativo e limite de tempo. As opções de heurísticas e cortes são configurações do solver, não restrições matemáticas.
+Para o primeiro protótipo, mantenha configurações essenciais e introduza ajustes avançados somente depois de validar o modelo.
+
+\section{Tradução das restrições para JuMP}
+A macro \texttt{@constraint} permite declarar restrições. A cobertura exige:
+\begin{equation}
+\sum_{i\in P}x_{ij}=1,\qquad \forall j\in T.
+\end{equation}
+Em JuMP:
+\begin{lstlisting}[language=Julia]
+@constraint(model, cobertura[j in T],
+    sum(x[i,j] for i in P) == 1
+)
+\end{lstlisting}
+A expressão \texttt{j in T} cria uma restrição para cada turma.
+\begin{center}
+\begin{tabular}{p{0.34\textwidth}p{0.56\textwidth}}
+\toprule
+\textbf{Restrição matemática} & \textbf{Tradução conceitual}\\
+\midrule
+Cobertura & Exatamente um professor por turma.\\
+Elegibilidade & $x_{ij}\leq e_{ij}$.\\
+Carga mínima & A soma das horas atribuídas ao professor é pelo menos $h_i^{\min}$.\\
+Carga máxima & A soma das horas atribuídas ao professor não ultrapassa $h_i^{\max}$.\\
+Piso de satisfação & $\underline{s}\leq\sum_j w_{ij}x_{ij}$ para cada professor considerado.\\
+Ligação turma--disciplina & $x_{ij}\leq g_{i,\mathrm{Disc}(j)}$.\\
+Teto de disciplinas & $\overline{g}\geq\sum_k g_{ik}$.\\
+Conflito por slot & Cada professor assume no máximo uma turma em cada slot fixo.\\
+Compactação por turno & Se uma turma alocada ocorre no turno $r$, então $z_{ir}=1$.\\
+\bottomrule
+\end{tabular}
+\end{center}
+As ligações reversas de $g_{ik}$ e $z_{ir}$ também devem ser implementadas. Elas garantem que as variáveis auxiliares representem a alocação real, em vez de permanecerem artificialmente maiores que a ocupação efetiva.
+
+\section{Exportação, resolução e leitura da solução}
+O código da orientadora exporta o modelo:
+\begin{lstlisting}[language=Julia]
+write_to_file(m, "./model/ps" * instance * ".lp")
+\end{lstlisting}
+O arquivo \texttt{.lp} permite inspecionar a formulação construída. A resolução é iniciada com:
+\begin{lstlisting}[language=Julia]
+optimize!(model)
+\end{lstlisting}
+Após a resolução, verifique o status do solver antes de acessar valores das variáveis. Para benchmarks, registre:
+\begin{itemize}
+\item status da otimização;
+\item valor da função objetivo;
+\item alocação de cada turma;
+\item carga semanal de cada professor;
+\item satisfação individual;
+\item número de turnos ocupados;
+\item máximo de disciplinas por professor;
+\item tempo de execução e gap, quando disponíveis.
+\end{itemize}
+
+\section{Observações sobre o arquivo recebido}
+O trecho enviado aparenta depender de código que não está incluído. Conjuntos e parâmetros como \texttt{K}, \texttt{T}, \texttt{P}, \texttt{priority} e \texttt{demand} são utilizados sem definição no fragmento. Além disso, alguns acessos às variáveis \texttt{V} e \texttt{Q} aparentam usar quantidades de índices diferentes das declarações apresentadas. Esses pontos devem ser conferidos no projeto completo. Assim, o arquivo é mais útil como referência de organização do que como programa autônomo.
+
+\section{Plano de desenvolvimento recomendado}
+\begin{enumerate}[label=\textbf{Etapa \Alph*.}]
+\item \textbf{Instância pequena fixa.} Codificar diretamente em Julia os três professores e as quatro turmas da instância reduzida.
+\item \textbf{Validação matemática.} Conferir cobertura, elegibilidade, carga horária, conflitos, satisfação e variáveis auxiliares.
+\item \textbf{Entrada JSON.} Depois que o protótipo funcionar, carregar o JSON normalizado produzido pelo Python.
+\item \textbf{Benchmarks.} Automatizar leitura das instâncias, construção do modelo, resolução e registro dos resultados.
+\end{enumerate}
+Essa sequência reduz fontes possíveis de erro. Com dados escritos diretamente no código, divergências tendem a estar na tradução matemática ou nas restrições. A leitura do JSON pode ser adicionada depois, como etapa independente.
+
+\section{Primeiro teste e valores de referência}
+O exemplo inicial utiliza a instância reduzida e a função objetivo ponderada sem normalização. Os valores de referência para a solução indicada no estudo anterior são:
+\begin{center}
+\begin{tabular}{lc}
+\toprule
+\textbf{Indicador} & \textbf{Valor de referência}\\
+\midrule
+Preferência total $F$ & 17\\
+Piso de satisfação $\underline{s}$ & 3\\
+Turnos ocupados $C$ & 8\\
+Máximo de disciplinas $\overline{g}$ & 1\\
+Função objetivo $Z$ & 9{,}9\\
+\bottomrule
+\end{tabular}
+\end{center}
+Esses valores servem como referência para conferir a implementação; não constituem confirmação de que o arquivo foi executado nesta etapa. A execução depende de Julia, JuMP, CPLEX e de uma instalação/licença compatível do solver.
+
+\section{Checklist de estudo}
+\begin{itemize}[label=$\square$]
+\item Sei explicar a função de JuMP e CPLEX.
+\item Sei distinguir conjuntos, parâmetros e variáveis de decisão.
+\item Consigo traduzir a restrição de cobertura para \texttt{@constraint}.
+\item Consigo explicar por que $x_{ij}$, $z_{ir}$ e $g_{ik}$ são diferentes.
+\item Sei por que o modelo deve ser validado com uma instância pequena.
+\item Sei quais indicadores registrar em cada benchmark.
+\end{itemize}
+\end{document}

@@ -1,0 +1,109 @@
+{
+  "id": "exemplo_convertido",
+  "descricao": "Instancia convertida de ofertas estruturadas; confira criterios_conversao antes de usar como dado real.",
+  "criterios_conversao": {
+    "arquivo_origem": "exemplo_ofertas_estruturadas.json",
+    "carga_min_padrao": 4.0,
+    "carga_max_padrao": 12.0,
+    "horas_padrao": 4.0,
+    "turmas_com_horas_padrao": [],
+    "turmas_sem_professores_listados": [],
+    "qualificacao_modo": "oferta",
+    "significado_qualificacao_modo_oferta": "professor listado na oferta e assumido qualificado para aquela turma; nao e uma matriz institucional validada",
+    "disponibilidade": "assumida como true para todos os pares; o PDF nao fornece indisponibilidade individual",
+    "perfil_preferencias": "zero",
+    "preferencias_sinteticas": false,
+    "semente_preferencias": 42,
+    "cargas_individuais": "carga_min/carga_max comuns configuradas na conversao; substituir por dados reais quando disponiveis",
+    "horas_turma": "soma das duracoes em minutos dividida por minutos_por_unidade_carga; se nao houver intervalos completos, usa horas_padrao",
+    "minutos_por_unidade_carga": 60.0
+  },
+  "turnos_semanais": [
+    "Seg-vesp",
+    "Ter-mat",
+    "Qua-vesp",
+    "Qui-mat"
+  ],
+  "professores": [
+    {
+      "id": "P01",
+      "nome": "Ana Lucia",
+      "carga_min": 4.0,
+      "carga_max": 12.0,
+      "afastado": false
+    },
+    {
+      "id": "P02",
+      "nome": "Elinaldo",
+      "carga_min": 4.0,
+      "carga_max": 12.0,
+      "afastado": false
+    }
+  ],
+  "turmas": [
+    {
+      "id": "EXA806-T01",
+      "disciplina": "EXA806",
+      "horas": 4.0,
+      "slots": [
+        {
+          "dia": "Seg",
+          "horario": "17:30",
+          "turno": "Seg-vesp"
+        },
+        {
+          "dia": "Qua",
+          "horario": "17:30",
+          "turno": "Qua-vesp"
+        }
+      ]
+    },
+    {
+      "id": "TEC217-TP01",
+      "disciplina": "TEC217",
+      "horas": 4.0,
+      "slots": [
+        {
+          "dia": "Ter",
+          "horario": "09:30",
+          "turno": "Ter-mat"
+        },
+        {
+          "dia": "Qui",
+          "horario": "09:30",
+          "turno": "Qui-mat"
+        }
+      ]
+    }
+  ],
+  "pares_professor_turma": [
+    {
+      "professor": "P01",
+      "turma": "EXA806-T01",
+      "qualificado": true,
+      "disponivel": true,
+      "preferencia": 0
+    },
+    {
+      "professor": "P01",
+      "turma": "TEC217-TP01",
+      "qualificado": false,
+      "disponivel": true,
+      "preferencia": 0
+    },
+    {
+      "professor": "P02",
+      "turma": "EXA806-T01",
+      "qualificado": false,
+      "disponivel": true,
+      "preferencia": 0
+    },
+    {
+      "professor": "P02",
+      "turma": "TEC217-TP01",
+      "qualificado": true,
+      "disponivel": true,
+      "preferencia": 0
+    }
+  ]
+}
