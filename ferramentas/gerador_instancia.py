@@ -95,6 +95,55 @@ def normalizar_horario(h: dict[str, Any]) -> dict[str, Any]:
         "duracao_minutos": duracao_minutos,
     }
 
+GRANULARIDADE_MINUTOS = 30
+
+
+def hora_para_minutos(horario: str) -> int:
+    hora, minuto = map(int, horario.split(":"))
+    return hora * 60 + minuto
+
+
+def minutos_para_hora(minutos: int) -> str:
+    hora = minutos // 60
+    minuto = minutos % 60
+    return f"{hora:02d}:{minuto:02d}"
+
+
+def expandir_intervalo(horario: dict[str, Any]) -> list[dict[str, Any]]:
+    inicio = horario["horario"]
+    fim = horario["horario_fim"]
+
+    if not fim:
+        raise ValueError(
+            f"Horario final ausente para o encontro de {inicio}."
+        )
+
+    inicio_min = hora_para_minutos(inicio)
+    fim_min = hora_para_minutos(fim)
+
+    if inicio_min >= fim_min:
+        raise ValueError(f"Intervalo invalido: {inicio}-{fim}.")
+
+    delta = GRANULARIDADE_MINUTOS
+
+    if inicio_min % delta != 0 or fim_min % delta != 0:
+        raise ValueError(
+            f"Intervalo {inicio}-{fim} incompatível com "
+            f"a granularidade de {delta} minutos."
+        )
+
+    slots = []
+
+    for minuto in range(inicio_min, fim_min, delta):
+        slots.append({
+            "dia": horario["dia"],
+            "horario": minutos_para_hora(minuto),
+            "horario_fim": minutos_para_hora(minuto + delta),
+            "turno": horario["turno"],
+        })
+
+    return slots
+
 
 def perfil_preferencia(rng: random.Random, perfil: str) -> int:
     if perfil == "zero":
